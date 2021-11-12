@@ -1,0 +1,47 @@
+site_name: Physique - ENS Lyon/Cachan - 1995
+
+theme:
+  name: 'readthedocs'
+#  name: 'ivory'
+
+plugins:
+  - search
+  - enumerate-headings
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: True
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - md_in_html
+
+extra_css:
+  - 'https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css'
+
+extra_javascript:
+  - 'https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js'
+  - 'extra.js'
+
+nav:
+# - 'index.md'
+ - 'Modes propres de torsion' : 'modes_propres_torsion/index.md'
+ - 'Approximation de la chaîne continue' : 'chaine_continue/index.md'
+ - 'Chaîne avec balourds' : 'chaine_balourds/index.md'
