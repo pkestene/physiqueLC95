@@ -1,5 +1,6 @@
 !!! title "Epreuve de physique - concours ENS Lyon/Cachan - 1995"
 
+Le sujet de la composition est [disponible en pdf](compo_physique_ensLC95.pdf)
 
 **avertissement**: il ne s'agit pas d'une correction type ou d'un exemple de copie attendue le jour du concours. Le seul objectif poursuivi est de répondre aux questions de manière souple en apportant des éclaircissements lorsque les questions posées débordent du programme des classes préparatoires.
 
