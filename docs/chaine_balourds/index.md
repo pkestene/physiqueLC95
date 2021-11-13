@@ -52,7 +52,7 @@ La première intégrale est nulle d'après la propritété remarquable d'un cent
 
 ### nouvelle équation du mouvement
 
-Il faut aprésent tenir compte du couple exercé en $O_n$ par le poids appliqué en $G_n$; soit en projection sur l'axe de la chaîne :
+Il faut à présent tenir compte du couple exercé en $O_n$ par le poids appliqué en $G_n$; soit en projection sur l'axe de la chaîne :
 
 \begin{align*}
 ( \overrightarrow{O_nG_n} \wedge M\overrightarrow{g} ). \vec{u_x} = - Mgl \sin \theta_n
