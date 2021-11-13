@@ -29,8 +29,6 @@ Autres resources intéressantes:
   - https://www.mkdocs.org/user-guide/configuration/#extra_css
   - https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/#mathjax-output-format
 
-Finally modify mkdocs.yml, especially arithmatex to generate generic output needed by katex.
-
 ## Visualiser le site localement
 
 ```shell
