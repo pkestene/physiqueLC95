@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Approximation de la chaîne continue - Physique - ENS Lyon/Cachan - 1995</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" rel="stylesheet"/>
+<script>
+    // Current page data
+    var mkdocs_page_name = "Approximation de la cha\u00eene continue";
+    var mkdocs_page_input_path = "chaine_continue/index.md";
+    var mkdocs_page_url = null;
+  </script>
+<script defer="" src="../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</link></head>
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Physique - ENS Lyon/Cachan - 1995</a>
+<div role="search">
+<form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
+</div>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modes_propres_torsion/">Modes propres de torsion</a>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="./">Approximation de la chaîne continue</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#equations-du-mouvement-et-solutions-generales">Equations du mouvement et solutions générales</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#determination-de-mathcalj-et-mathcalc">détermination de \(\mathcal{J}\) et \(\mathcal{C}\)</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#equation-donde-equation-de-dalembert">équation d’onde - équation de d’Alembert</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#resolution">résolution</a>
+<ul>
+<li class="toctree-l4"><a class="reference internal" href="#_1"></a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#_2"></a>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#_3"></a>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#densite-lineique-denergie-mecanique">densité linéique d’énergie mécanique</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#interpretation-physique">interprétation physique</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cas-particulier-dune-onde-allant-dans-le-sens-des-x-croissants">cas particulier d’une onde allant dans le sens des \(x\) croissants</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cas-particulier-dune-onde-allant-dans-le-sens-des-x-decroissants">cas particulier d’une onde allant dans le sens des \(x\) decroissants</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cas-general">cas général</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#traversee-dune-discontinuite">traversée d’une discontinuité</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#cas-dune-onde-se-propageant-vers-les-x-croissants">cas d’une onde se propageant vers les \(x\) croissants</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#resolution_1">résolution</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#etude-energetique">étude énergétique</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#etude-qualitative-de-la-traversee-du-dioptre">étude qualitative de la traversée du dioptre</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#modes-propres-de-la-chane-continue">Modes propres de la chaı̂ne continue</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#solutions-propagatives">solutions propagatives</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#comparaison-des-modeles-chane-discrete-et-chane-continue">comparaison des modèles chaı̂ne discrète et chaı̂ne continue</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#chane-continue-de-longueur-finie">chaı̂ne continue de longueur finie</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#modele-de-debye">modèle de Debye</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#validite-du-modele-de-debye">validité du modèle de Debye</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#etude-du-comportement-dun-paquet-donde">Etude du comportement d’un paquet d’onde</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#propagation-sans-deformation">propagation sans déformation</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#expression-mathematique-de-la-propagation-sans-deformation">expression mathématique de la propagation sans déformation</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#centre-du-paquet-donde">centre du paquet d’onde</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#reflexion-transmission-dune-onde-incidente-sinusodale">réflexion - transmission d’une onde incidente sinusoı̈dale</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#reflexion-transmission-dun-paquet-donde-quelconque">réflexion - transmission d’un paquet d’onde quelconque</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chaine_balourds/">Chaîne avec balourds</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Physique - ENS Lyon/Cachan - 1995</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="..">Docs</a> »</li>
+<li>Approximation de la chaîne continue</li>
+<li class="wy-breadcrumbs-aside">
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<h1 id="approximation-de-la-chane-continue"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.</span> Approximation de la chaı̂ne continue<a class="headerlink" href="#approximation-de-la-chane-continue" title="Permanent link">¶</a></h1>
+<h2 id="equations-du-mouvement-et-solutions-generales"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1</span> Equations du mouvement et solutions générales<a class="headerlink" href="#equations-du-mouvement-et-solutions-generales" title="Permanent link">¶</a></h2>
+<h3 id="determination-de-mathcalj-et-mathcalc"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1.1</span> détermination de <span class="arithmatex">\(\mathcal{J}\)</span> et <span class="arithmatex">\(\mathcal{C}\)</span><a class="headerlink" href="#determination-de-mathcalj-et-mathcalc" title="Permanent link">¶</a></h3>
+<ul>
+<li>il est plus difficile de tordre de <span class="arithmatex">\(\Delta\theta\)</span> une petite portion de fil qu'une grande; le couple à appliquer doit être plus grand. La constante de torsion est alors inversement proportionnelle à la longueur du morceau considéré.</li>
+<li>
+<p>On intègre entre <span class="arithmatex">\(x\)</span> et <span class="arithmatex">\(x+a\)</span> les quantités <span class="arithmatex">\(\mathcal{J}dx\)</span> puis <span class="arithmatex">\(\frac{dx}{\mathcal{C}}\)</span>; on obtient :</p>
+<div class="arithmatex">\[\mathcal{J}a = J\]</div>
+<div class="arithmatex">\[\frac{a}{\mathcal{C}} = \frac{1}{C}\]</div>
+</li>
+</ul>
+<h3 id="equation-donde-equation-de-dalembert"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1.2</span> équation d’onde - équation de d’Alembert<a class="headerlink" href="#equation-donde-equation-de-dalembert" title="Permanent link">¶</a></h3>
+<p>On considère une tranche <span class="arithmatex">\(\mathcal{T}\)</span> d'épaisseur <span class="arithmatex">\(dx\)</span>.</p>
+<figure>
+<p><img alt="disque" src="troncon.gif"/></p>
+</figure>
+<p>On détermine les couples exercés de part et d'autre par le reste de la chaîne en considérant deux morceaux d'épaisseur <span class="arithmatex">\(d\xi\)</span> de chaque côté.</p>
+<p>Les tronçons compris entre <span class="arithmatex">\(x-d\xi\)</span> et <span class="arithmatex">\(x\)</span> et entre <span class="arithmatex">\(x+dx\)</span> et <span class="arithmatex">\(x+dx+d\xi\)</span> exercent respectivement  sur <span class="arithmatex">\(\mathcal{T}\)</span> les couples :</p>
+<div class="arithmatex">\[-\frac{\mathcal{C}}{d\xi}\Big[\theta(x,t)-\theta(x-d\xi,t)\Big] = -\frac{\mathcal{C}}{d\xi} \Big[d\xi\frac{\partial \theta}{\partial x}(x,t)\Big]\]</div>
+<div class="arithmatex">\[-\frac{\mathcal{C}}{d\xi}\Big[\theta(x+dx,t)-\theta(x+dx+d\xi,t)\Big] = \frac{\mathcal{C}}{d\xi} \Big[d\xi\frac{\partial \theta}{\partial x}(x+dx,t)\Big]\]</div>
+<p>On peut simplifier par <span class="arithmatex">\(d\xi\)</span>.</p>
+<p>On applique le théorème du moment cinétique à cette tranche, on obtient :</p>
+<div class="arithmatex">\[\mathcal{J}dx \frac{\partial^2 \theta}{\partial t^2}(x,t) = \mathcal{C}\Big[-\frac{\partial \theta}{\partial x}(x,t)+\frac{\partial \theta}{\partial x}(x+dx,t)\Big] = \mathcal{C}dx \frac{\partial^2 \theta}{\partial x^2}(x,t)\]</div>
+<p>On simplifie par <span class="arithmatex">\(dx\)</span> et l'on obtient l'équation de d'Alembert :</p>
+<div class="admonition eq">
+<p class="admonition-title">équation de d'Alembert</p>
+<div class="arithmatex">\[\frac{\partial^2 \theta}{\partial t^2}(x,t) - v^2 \frac{\partial^2 \theta}{\partial x^2}(x,t) = 0 \qquad avec \qquad v^2=\frac{\mathcal{C}}{\mathcal{J}}\]</div>
+</div>
+<h3 id="resolution"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1.3</span> résolution<a class="headerlink" href="#resolution" title="Permanent link">¶</a></h3>
+<h4 id="_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1.3.1</span> <a class="headerlink" href="#_1" title="Permanent link">¶</a></h4>
+<p>On peut considérer qu'il s'agit ici d'une question de cours; pour résoudre l'équation de d'Alembert on effectue le changement de variable suivant : <span class="arithmatex">\(X = t - \frac{x}{v}\)</span> et <span class="arithmatex">\(Y = t + \frac{x}{v}\)</span>; <span class="arithmatex">\(\theta(x,t)\)</span> devient alors <span class="arithmatex">\(\phi(X,Y)\)</span>.</p>
+<p>On applique le théorème de composition des fonctions de plusieurs variables :</p>
+<div class="arithmatex">\[\begin{align*}
+\frac{\partial \theta}{\partial t} &amp; =  \frac{\partial \phi}{\partial X} \frac{\partial X}{\partial t} + \frac{\partial \phi}{\partial Y} \frac{\partial Y}{\partial t}  =   \frac{\partial\phi}{\partial X} + \frac{\partial\phi}{\partial Y}\\
+\frac{\partial\theta}{\partial x} &amp; =  \frac{\partial\phi}{\partial X} \frac{\partial X}{\partial x} + \frac{\partial \phi}{\partial Y} \frac{\partial Y}{\partial x}  =  - \frac{1}{v}\frac{\partial \phi}{\partial X} + \frac{1}{v}\frac{\partial\phi}{\partial Y}
+\end{align*}\]</div>
+<p>On continue pour obtenir les dérivées secondes :</p>
+<div class="arithmatex">\[\begin{align*}
+\frac{\partial^2 \theta}{\partial t^2} &amp; = &amp; \frac{\partial^2 \phi}{\partial X^2} + 2\frac{\partial^2 \phi}{\partial X \partial Y} + \frac{\partial^2 \phi}{\partial Y^2} \\
+ \frac{\partial^2 \theta}{\partial x^2} &amp; = &amp; \frac{1}{v^2} \Big[ \frac{\partial^2 \phi}{\partial X^2} - 2\frac{\partial^2 \phi}{\partial X \partial Y} + \frac{\partial^2 \phi}{\partial Y^2} \Big]
+\end{align*}\]</div>
+<p>Les deux dernières équations permettent d'écrire l'équation de d'Alembert en variables X, Y :</p>
+<div class="arithmatex">\[\frac{\partial^2 \phi}{\partial X \partial Y}=0\]</div>
+<div class="admonition remark">
+<p class="admonition-title">remarque</p>
+<p>Pour mieux comprendre l'origine du changement de variable proposé par l'énoncé on peut s'apercevoir que l'équation de d'Alembert peut être réécrite sous la forme :</p>
+<div class="arithmatex">\[\big( \frac{\partial}{\partial t} - v \frac{\partial}{\partial x} \big) \big( \frac{\partial}{\partial t} + v \frac{\partial}{\partial x} \big) \theta = 0\]</div>
+<p>Cela est possible car les opérateurs <span class="arithmatex">\(\frac{\partial}{\partial t}\)</span> et <span class="arithmatex">\(\frac{\partial}{\partial x}\)</span> commutent. On voit alors <em>apparaître</em> l'interet des variables <span class="arithmatex">\(t - \frac{x}{v}\)</span> et <span class="arithmatex">\(t + \frac{x}{v}\)</span>.</p>
+</div>
+<h4 id="_2"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1.3.2</span> <a class="headerlink" href="#_2" title="Permanent link">¶</a></h4>
+<p>On intègre cette équation par rapport à <span class="arithmatex">\(Y\)</span> :</p>
+<div class="arithmatex">\[\frac{\partial \phi}{\partial X} = f(X)\]</div>
+<p>En appelant <span class="arithmatex">\(F(X)\)</span> une primitive de <span class="arithmatex">\(f(X)\)</span> et en integrant par rapport à <span class="arithmatex">\(X\)</span> :</p>
+<div class="arithmatex">\[\begin{align*}
+\phi(X,Y)  &amp;= F(X) + G(Y) \\
+\theta(x,t) &amp;= F(t-\frac{x}{v}) + G(t+\frac{x}{v})
+\end{align*}\]</div>
+<p><span class="arithmatex">\(F\)</span> et <span class="arithmatex">\(G\)</span> sont des fonctions dérivables d'<em>une seule variable</em>.</p>
+<h4 id="_3"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1.3.3</span> <a class="headerlink" href="#_3" title="Permanent link">¶</a></h4>
+<p>Par exemple, si <span class="arithmatex">\(G\)</span> est nulle <span class="arithmatex">\(\theta (x,t) =  F(t-\frac{x}{v})\)</span>. On sait que mathématiquement la fontion <span class="arithmatex">\(t \rightarrow h(t-t_0)\)</span> a la même courbe représentative que la fonction <span class="arithmatex">\(t \rightarrow h(t)\)</span> mais translatée de <span class="arithmatex">\(t_0\)</span> le long de l'axe des <span class="arithmatex">\(t\)</span>. Si l'on pose <span class="arithmatex">\(t_0 = \frac{x}{v}\)</span> on peut interpréter <span class="arithmatex">\(F(t-\frac{x}{v})\)</span> comme un signal se propageant vers les <span class="arithmatex">\(x\)</span> croissants.</p>
+<figure>
+<p><img alt="disque" src="collision.gif"/></p>
+</figure>
+<p>Finalement <span class="arithmatex">\(\theta\)</span> est la somme de deux signaux se propageant en sens inverse.</p>
+<h3 id="densite-lineique-denergie-mecanique"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1.4</span> densité linéique d’énergie mécanique<a class="headerlink" href="#densite-lineique-denergie-mecanique" title="Permanent link">¶</a></h3>
+<p>Considérons un tronçon de longueur <span class="arithmatex">\(dx\)</span> de la chaîne située 
+entre les abscisses <span class="arithmatex">\(x\)</span> et <span class="arithmatex">\(x+dx\)</span>.
+Son énergie mécanique est la somme de deux termes :</p>
+<ul>
+<li>énergie cinétique : au premier ordre en <span class="arithmatex">\(dx\)</span>, la vitesse de rotation est uniforme dans la tranche et est égale à <span class="arithmatex">\(\frac{\partial \theta}{\partial t}(x,t)\)</span>; soit <span class="arithmatex">\(dE_c = \frac{\mathcal{J}dx}{2} \big(\frac{\partial \theta}{\partial t}\big)^2(x,t)\)</span></li>
+<li>énergie potentielle : c'est l'énergie que doit fournir un 
+opérateur extérieur pour tordre réversiblement la tranche, 
+c'est à dire l'opposé du travail des forces de torsion lors
+ de l'opération suivante : l'angle en <span class="arithmatex">\(x\)</span> étant fixé à 
+<span class="arithmatex">\(\theta(x,t)\)</span> on fait passer l'angle en <span class="arithmatex">\(x+dx\)</span> de <span class="arithmatex">\(\theta(x,t)\)</span> 
+à <span class="arithmatex">\(\theta(x+dx,t)\)</span>; on obtient <span class="arithmatex">\(dE_p = - \int_{\theta(x,t)}^{\theta(x+dx,t)} \frac{\mathcal{C}}{dx}(\alpha - \theta(x,t))d\alpha\)</span> soit,
+au premier ordre en dx : <span class="arithmatex">\(dE_p = \frac{\mathcal{C}dx}{2}\big(\frac{\partial \theta}{\partial x}\big)^2(x,t)\)</span></li>
+</ul>
+<p>On obtient l'expression de la densité linéique d'énergie :</p>
+<div class="arithmatex">\[\mathcal{E} = \frac{dE_c}{dx} + \frac{dE_p}{dx} = \frac{\mathcal{J}}{2} \big(\frac{\partial \theta}{\partial t}\big)^2(x,t) + \frac{\mathcal{C}}{2} \big(\frac{\partial \theta}{\partial x}\big)^2(x,t)\]</div>
+<p>L'expression comporte deux termes quadratiques remarquablement symétriques; on passe de l'un à l'autre en changeant <span class="arithmatex">\(\mathcal{J}\)</span> en <span class="arithmatex">\(\mathcal{C}\)</span> et le temps en l'espace.</p>
+<p>On dérive par rapport au temps :</p>
+<div class="arithmatex">\[\frac{\partial \mathcal{E}}{\partial t} = \mathcal{J} \frac{\partial \theta}{\partial t}
+\frac{\partial^2 \theta}{\partial t^2} + \mathcal{C} \frac{\partial \theta}{\partial x}
+\frac{\partial^2 \theta}{\partial t \partial x}\]</div>
+<p>On utilise l'équation aux dérivées partielles du mouvement pour transformer le premier terme, alors :</p>
+<div class="arithmatex">\[\frac{\partial \mathcal{E}}{\partial t} = - \frac{\partial}{\partial x} \Big[ - \mathcal{C} \frac{\partial \theta}{\partial t} \frac{\partial \theta}{\partial x} \Big] = - \frac{\partial \mathcal{G}}{\partial x}\]</div>
+<p>Ainsi <span class="arithmatex">\(\mathcal{G}\)</span> est définie, à une fonction du temps près, par :</p>
+<div class="arithmatex">\[\mathcal{G}(x,t) =  - \mathcal{C} \frac{\partial \theta}{\partial t} \frac{\partial \theta}{\partial x} + cste(t)\]</div>
+<h3 id="interpretation-physique"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1.5</span> interprétation physique<a class="headerlink" href="#interpretation-physique" title="Permanent link">¶</a></h3>
+<p>Il s'agit là d'une équation de continuité de l'énergie.
+<span class="arithmatex">\(\mathcal{G}(x,t)\)</span> représente un flux d'énergie qui passe à travers une section du fil en <span class="arithmatex">\(x\)</span> (dans le sens des <span class="arithmatex">\(x\)</span> croissants) par unité de temps (ou encore la puissance transmise dans le sens des <span class="arithmatex">\(x\)</span> croissants si <span class="arithmatex">\(\mathcal{G}(x,t)&gt;0\)</span> en <span class="arithmatex">\(x\)</span> à <span class="arithmatex">\(t\)</span>).</p>
+<p>En intégrant la relation sur une portion de fil de longueur <span class="arithmatex">\(dx\)</span>, on peut écrire une équation de conservation de l'énergie.</p>
+<p>Autres domaines de la physique :</p>
+<ul>
+<li>en électricité : <span class="arithmatex">\(div \overrightarrow{j_{elec}} + \frac{\partial \rho}{\partial t} = 0\)</span> (<a href="https://fr.wikipedia.org/wiki/Conservation_de_la_charge_%C3%A9lectrique">conservation de la quantité de charge</a>)</li>
+<li>en mécanique des fluides : <span class="arithmatex">\(div \overrightarrow{j} + \frac{\partial \rho}{\partial t} = 0\)</span> (<a href="https://fr.wikipedia.org/wiki/Conservation_de_la_mati%C3%A8re">conservation de la quantité de matière</a>)</li>
+<li>en électro-magnétisme : <span class="arithmatex">\(div \overrightarrow{\pi} + \overrightarrow{j}.\overrightarrow{E} + \frac{\partial \omega}{\partial t} = 0\)</span> (conservation de l'énergie électromagnétique, <a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_de_Poynting">théorème de Poynting</a>)</li>
+</ul>
+<h3 id="cas-particulier-dune-onde-allant-dans-le-sens-des-x-croissants"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1.6</span> cas particulier d’une onde allant dans le sens des <span class="arithmatex">\(x\)</span> croissants<a class="headerlink" href="#cas-particulier-dune-onde-allant-dans-le-sens-des-x-croissants" title="Permanent link">¶</a></h3>
+<p><span class="arithmatex">\(\theta(x,t) = F(t-\frac{x}{v})\)</span></p>
+<p>On vérifie aisément que les densités d'énergie cinétique et élastique sont égales :</p>
+<div class="arithmatex">\[\mathcal{E}_c(x,t) = \mathcal{E}_{el}(x,t) = \frac{\mathcal{J}}{2} \Big[ F'(t-\frac{x}{v}) \Big]^2 ,\,\,\,\, \forall t,x\]</div>
+<p>On obtient alors :</p>
+<div class="arithmatex">\[\mathcal{G}(x,t) = v \mathcal{E}(x,t), \,\,\,\, \forall t,x\]</div>
+<h3 id="cas-particulier-dune-onde-allant-dans-le-sens-des-x-decroissants"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1.7</span> cas particulier d’une onde allant dans le sens des <span class="arithmatex">\(x\)</span> decroissants<a class="headerlink" href="#cas-particulier-dune-onde-allant-dans-le-sens-des-x-decroissants" title="Permanent link">¶</a></h3>
+<p>Il suffit de changer <span class="arithmatex">\(x\)</span> en <span class="arithmatex">\(-x\)</span> dans les expressions précédentes; on obtient :</p>
+<div class="arithmatex">\[\mathcal{E}_c(x,t) = \mathcal{E}_{el}(x,t) = \frac{\mathcal{J}}{2} \Big[ G'(t+\frac{x}{v}) \Big]^2 ,\,\,\,\, \forall t,x\]</div>
+<p>et</p>
+<div class="arithmatex">\[\mathcal{G}(x,t) = -v \mathcal{E}(x,t) ,\,\,\,\, \forall t,x\]</div>
+<p>On constate ainsi que l'on a inversé le sens du flux d'énergie en changeant le sens de progation de l'onde.</p>
+<h3 id="cas-general"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.1.8</span> cas général<a class="headerlink" href="#cas-general" title="Permanent link">¶</a></h3>
+<p>Etant donnée la solution générale  <span class="arithmatex">\(\theta(x,t) = F(t-\frac{x}{v}) + G(t+\frac{x}{v})\)</span> après quelques calculs simples il reste :</p>
+<div class="arithmatex">\[\mathcal{E}(x,t) =  \mathcal{J} \Big( F'(t-\frac{x}{v}) \Big)^2 + \mathcal{J} \Big( G'(t+\frac{x}{v}) \Big)^2\]</div>
+<p>et</p>
+<div class="arithmatex">\[\mathcal{G}(x,t) =  \mathcal{J}v \Big( F'(t-\frac{x}{v}) \Big)^2 - \mathcal{J}v \Big( G'(t+\frac{x}{v}) \Big)^2\]</div>
+<p>On constate que lorsque deux signaux se propagent en sens inverse sur le fil :</p>
+<ul>
+<li>les densités linéiques d'énergie mécanique (respectives) s'ajoutent.</li>
+<li>les flux (algébriques) d'énergie transportée  se retranchent.</li>
+</ul>
+<h2 id="traversee-dune-discontinuite"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.2</span> traversée d’une discontinuité<a class="headerlink" href="#traversee-dune-discontinuite" title="Permanent link">¶</a></h2>
+<h3 id="cas-dune-onde-se-propageant-vers-les-x-croissants"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.2.1</span> cas d’une onde se propageant vers les <span class="arithmatex">\(x\)</span> croissants<a class="headerlink" href="#cas-dune-onde-se-propageant-vers-les-x-croissants" title="Permanent link">¶</a></h3>
+<p>On considère une onde <em>incidente</em> décrite par :</p>
+<div class="arithmatex">\[\theta_i (x,t) = F(t-\frac{x}{v_1})\]</div>
+<ul>
+<li>
+<p>en <span class="arithmatex">\(x=0\)</span>, on change de milieu de propagation; on peut donc s'attendre à des phénomènes de réflexion et réfraction.</p>
+</li>
+<li>
+<p>analogies</p>
+<div class="codehilite"><pre><span></span><code>- [en optique] (et plus généralement en électro-magnétisme) lorsqu'une onde lumineuse rencontre une surface séparant deux milieux d'indices différents.
+- [en mécanique des fluides :] onde de surface se propageant dans un canal (voir sujet X93 M' et P'), ...
+- [en acoustique :] corde vibrante, tube sonore, ultrason (échographie médicale), ...
+</code></pre></div>
+</li>
+<li>
+<p>dioptre</p>
+</li>
+<li>
+<p>conditions aux limites</p>
+<ul>
+<li>en <span class="arithmatex">\(x= + \infty\)</span> : on suppose qu'il n'y a pas de source qui excite la corde en torsion, donc <span class="arithmatex">\(K = 0\)</span>.</li>
+<li>en <span class="arithmatex">\(x = 0\)</span> : le fil ne se déchire pas; <span class="arithmatex">\(\theta\)</span> est continu (1) et le flux d'énergie se conserve (2) :</li>
+</ul>
+<div class="arithmatex">\[\begin{align}
+F(t) + G(t) &amp;= H(t) \\
+\mathcal{J}_1 v_1 (F'(t))^2 - \mathcal{J}_1 v_1 (G'(t))^2 &amp;= \mathcal{J}_2 v_2 (H'(t))^2
+\end{align}\]</div>
+</li>
+</ul>
+<h3 id="resolution_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.2.2</span> résolution<a class="headerlink" href="#resolution_1" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>expression de <span class="arithmatex">\(G\)</span> et <span class="arithmatex">\(H\)</span></p>
+<ul>
+<li>On dérive (1) : <span class="arithmatex">\(F'+G' = H'\)</span></li>
+<li>On factorise (2) : <span class="arithmatex">\(z_1 (F'+G')(F'-G') = z_2 H^{'2}\)</span></li>
+</ul>
+</li>
+</ul>
+<p>On résout en fonction de <span class="arithmatex">\(F'(t)\)</span> puis on intègre :</p>
+<div class="arithmatex">\[\begin{align*}
+G'(t)= \frac{z_1-z_2}{z_1+z_2}F'(t)\\
+H'(t)= \frac{2z_1}{z_1+z_2}F'(t)
+\end{align*}\]</div>
+<p>soit</p>
+<div class="arithmatex">\[\begin{align*}
+G(t)= \frac{z_1-z_2}{z_1+z_2}F(t)+C_1\\
+H(t)= \frac{2z_1}{z_1+z_2}F(t)+C_2
+\end{align*}\]</div>
+<p>La relation (1) impose <span class="arithmatex">\(C_1=C_2\)</span>; d'autre part on peut choisir <span class="arithmatex">\(C_1=C_2=0\)</span> cela revient à changer l'origine de <span class="arithmatex">\(\theta\)</span>, soit :</p>
+<div class="arithmatex">\[\begin{align*}
+G(t)= \frac{z_1-z_2}{z_1+z_2}F(t)\\
+H(t)= \frac{2z_1}{z_1+z_2}F(t)
+\end{align*}\]</div>
+<ul>
+<li>coefficients de réflexion et de transmission en amplitude</li>
+</ul>
+<p>en <span class="arithmatex">\(x=0\)</span> :</p>
+<div class="arithmatex">\[\begin{align*}
+r_{12} = \frac{G(t)}{F(t)} = \frac{z_1-z_2}{z_1+z_2}\\
+t_{12} = \frac{H(t)}{F(t)} = \frac{2z_1}{z_1+z_2}
+\end{align*}\]</div>
+<ul>
+<li>
+<p>signe de <span class="arithmatex">\(r_{12}\)</span></p>
+<ul>
+<li>si <span class="arithmatex">\(z_2 \rightarrow 0\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+r=1 &amp; &amp; \mathcal{G}_r = z_1 {G'}^2 = z_1 {F'}^2 = \mathcal{G}_i\\
+t=2 &amp; &amp; \mathcal{G}_t = z_2 {H'}^2 = 0
+\end{align*}\]</div>
+<p>Il n'y a pas de puissance transmise dans le milieu <span class="arithmatex">\(2\)</span>!<br/>
+Comme <span class="arithmatex">\(z_2 = \sqrt{\mathcal{J}_2 \mathcal{C}_2 }\)</span> cela signifie que <span class="arithmatex">\(\mathcal{C}_2\)</span> tend vers zero (ou <span class="arithmatex">\(\mathcal{C}_2\)</span>) : tout se passe comme s'il n'y avait pas de fil dans le milieu 2!! Soit encore, comme si l'extremité en <span class="arithmatex">\(x=0\)</span> du fil du milieu 1 était libre. Lorsque l'énergie incidente arrive en <span class="arithmatex">\(x=0\)</span>, elle ne peut être transmise, elle est entièrement réfléchie.</p>
+<ul>
+<li>
+<p>signe de <span class="arithmatex">\(r_{12}\)</span></p>
+<ul>
+<li>si <span class="arithmatex">\(z_2 \rightarrow \infty\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+r= -1  &amp; \rightarrow &amp; \mathcal{G}_r = z_1 {G'}^2 = z_1 {F'}^2 = \mathcal{G}_i\\
+t= 2   &amp; \rightarrow &amp; \mathcal{G}_t = z_2 {H'}^2 = 0
+\end{align*}\]</div>
+<p>Il n'y a pas de puissance transmise dans le milieu <span class="arithmatex">\(2\)</span>!</p>
+<p>Comme <span class="arithmatex">\(z_2 = \sqrt{\mathcal{J}_2 \mathcal{C}_2 }\)</span> devient infini, cela signifie que le milieu devient infiniment inerte ( <span class="arithmatex">\(\mathcal{J}_2 \to \infty\)</span>) ou infiniment rigide ( <span class="arithmatex">\(\mathcal{C}_2 \to \infty\)</span>); dans tous les cas, le fil du milieu <span class="arithmatex">\(2\)</span> est immobile, en particulier en <span class="arithmatex">\(x=0\)</span>.</p>
+<p>Lorsque <span class="arithmatex">\(z_1 = z_2\)</span>, on dit qu'il y a adaptation d'impédance car la puissance transmise (<span class="arithmatex">\(\mathcal{G}_t\)</span>) est égale à la puissance incidente (<span class="arithmatex">\(\mathcal{G}_t\)</span>); la puissance réfléchie étant nulle. Du point de vue du transfert énergétique tout se passe comme si on avait qu'un seul milieu de propagation. C'est idéal!</p>
+<ul>
+<li>analogies</li>
+</ul>
+<p>Le même changement de signe pour la réflexion d'une OEM sur un dioptre séparant deux milieux d'indice optique <span class="arithmatex">\(n_1\)</span> et <span class="arithmatex">\(n_2\)</span> :</p>
+<div class="arithmatex">\[r_{12}=\frac{\big\| \overrightarrow{E_r} (z=0,t) \big\|}{\big\| \overrightarrow{E_r} (z=0,t) \big\|} = \frac{n_1-n_2}{n_1+n_2}\]</div>
+<h3 id="etude-energetique"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.2.3</span> étude énergétique<a class="headerlink" href="#etude-energetique" title="Permanent link">¶</a></h3>
+<ul>
+<li>coefficients <span class="arithmatex">\(R_{12}\)</span> et <span class="arithmatex">\(T_{12}\)</span><br/>
+  On définit ces deux coefficients à l'aide de la puissance transportée associée à chacun des signaux :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+R_{12} &amp;=\frac{\mathcal{G}_r (0_-,t)}{\mathcal{G}_i (0_-,t)} &amp;= \frac{v_1 \mathcal{J}_1 G^{'2}}{v_1 \mathcal{J}_1 F^{'2}} &amp;= \big( \frac{G'(t)}{F'(t)} \big)^2 &amp;= \big( \frac{G(t)}{F(t)} \big)^2 &amp;=r_{12}^2\\
+T_{12} &amp;=\frac{\mathcal{G}_t (0_+,t)}{\mathcal{G}_i (0_-,t)} &amp;= \frac{v_2 \mathcal{J}_2 H^{'2}}{v_1 \mathcal{J}_1 F^{'2}} &amp;= \frac{z_2}{z_1}\big( \frac{H'(t)}{F'(t)} \big)^2 &amp;= \frac{z_2}{z_1}\big( \frac{H(t)}{F(t)} \big)^2 &amp;= \frac{z_2}{z_1} t_{12}^2
+\end{align*}\]</div>
+<ul>
+<li>en fonction de <span class="arithmatex">\(z_1\)</span> et <span class="arithmatex">\(z_2\)</span> :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+R_{12} &amp;= \big(\frac{z_1-z_2}{z_1+z_2}\big)^2\\
+T_{12} &amp;= \frac{4 z_1 z_2}{(z_1+z_2)^2}
+\end{align*}\]</div>
+<ul>
+<li>conservation du flux d'énergie en <span class="arithmatex">\(x=0\)</span> :</li>
+</ul>
+<div class="arithmatex">\[R_{12}+T_{12}=1\]</div>
+<h3 id="etude-qualitative-de-la-traversee-du-dioptre"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.2.4</span> étude qualitative de la traversée du dioptre<a class="headerlink" href="#etude-qualitative-de-la-traversee-du-dioptre" title="Permanent link">¶</a></h3>
+<figure>
+<p><img alt="disque" src="224a.gif"/>
+</p>
+<figcaption></figcaption>
+</figure>
+<p>Sur la figure du dessus, on observe une impulsion incidente à t=-2<span class="arithmatex">\(\Delta\)</span>t, et sur la figure du dessous, on a les impulsions réfléchie et transmise à t=3<span class="arithmatex">\(\Delta\)</span>t</p>
+<p>La courbe en pointillés correspond au cas où <span class="arithmatex">\(z_2 &gt; z_1\)</span>, i.e. <span class="arithmatex">\(r_{12}&lt;0\)</span>.</p>
+<ul>
+<li>
+<p>cas où <span class="arithmatex">\(z_1=z_2\)</span> :</p>
+<p>On a <span class="arithmatex">\(r_{12}=0\)</span> et <span class="arithmatex">\(t_{12}=1\)</span> : il n'y a pas de réflexion, le signal incident est entièrement transmis sans déformation. Tout se passe comme s'il n'y avait qu'un seul milieu de propagation; on parle du phénomène d'<strong>adaptation d'impédance</strong>.</p>
+</li>
+</ul>
+<h2 id="modes-propres-de-la-chane-continue"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.3</span> Modes propres de la chaı̂ne continue<a class="headerlink" href="#modes-propres-de-la-chane-continue" title="Permanent link">¶</a></h2>
+<h3 id="solutions-propagatives"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.3.1</span> solutions propagatives<a class="headerlink" href="#solutions-propagatives" title="Permanent link">¶</a></h3>
+<ul>
+<li>solution en ondes progressives :</li>
+</ul>
+<p>On cherche des solutions de la forme <span class="arithmatex">\(\mathcal{R}e(A e^{i(qx-\omega t)})\)</span>
+Cette fonction convient si et seulement si :</p>
+<div class="arithmatex">\[\begin{align*}
+\frac{\partial^2 \theta}{\partial t^2} -v^2 \frac{\partial^2 \theta}{\partial x^2} = (-\omega^2+v^2q^2)Ae^{i(qx-\omega t)} = 0
+\end{align*}\]</div>
+<p>Il reste la condition :</p>
+<div class="arithmatex">\[\begin{align*}
+\omega^2 = v^2 q^2&amp;, &amp; \forall q
+\end{align*}\]</div>
+<ul>
+<li>relation de dispersion du modèle continu :</li>
+</ul>
+<figure>
+<p><img alt="disque" src="disper2.gif"/>
+</p>
+<figcaption>Relation de dispersion du modèle continu.</figcaption>
+</figure>
+<div class="arithmatex">\[\begin{align*}
+\omega= f_c(q) = v|q| = \sqrt{\frac{\mathcal{C}}{\mathcal{J}}}|q|
+\end{align*}\]</div>
+<p>En I-1-6-a on avait :</p>
+<div class="arithmatex">\[\begin{align*}
+\omega= f(q) =2\sqrt{\frac{C}{J}}|\sin \frac{qa}{2}|
+\end{align*}\]</div>
+<p>Effectuons un développement limité au voisinage de <span class="arithmatex">\(q=0\)</span> de <span class="arithmatex">\(f(q)\)</span> :</p>
+<div class="arithmatex">\[\begin{align*}
+f(q) \sim_{q \rightarrow 0^{+}} 2\sqrt{\frac{C}{J}}  \frac{qa}{2} = \sqrt{\frac{\mathcal{C}}{\mathcal{J}}}q = f_c(q)
+\end{align*}\]</div>
+<p>on montre ainsi que les deux courbes sont tangentes en <span class="arithmatex">\(q=0\)</span>.</p>
+<h3 id="comparaison-des-modeles-chane-discrete-et-chane-continue"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.3.2</span> comparaison des modèles chaı̂ne discrète et chaı̂ne continue<a class="headerlink" href="#comparaison-des-modeles-chane-discrete-et-chane-continue" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p><span class="arithmatex">\(f_c\)</span> n'est pas périodique en <span class="arithmatex">\(q\)</span>. La première zone de Brillouin est transformée en un <em>V</em>.</p>
+</li>
+<li>
+<p>Faisons tendre le pas élémentaire <span class="arithmatex">\(a\)</span> de la chaîne discrête vers 0 et développons <span class="arithmatex">\(f(q)\)</span> au premier ordre en a (pour <span class="arithmatex">\(q&gt;0\)</span> fixé) :</p>
+</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+f(q) \simeq  2\sqrt{\frac{C}{J}} \frac{qa}{2}  \simeq \sqrt{\frac{\frac{\mathcal{C}}{a}}{\mathcal{J}a}} qa \simeq \sqrt{\frac{\mathcal{C}}{\mathcal{J}}} q \simeq f_c(q)
+\end{align*}\]</div>
+<ul>
+<li>Réécrivons chacun des termes de l'équation de propagation discrète en développant à l'ordre deux en <span class="arithmatex">\(a\)</span> :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\theta_n-\theta_{n-1} &amp;= \theta(x=na,t)-\theta(x=(n-1)a,t) \simeq_{a \rightarrow 0} a \frac{\partial \theta}{\partial x}(x,t) - \frac{a^2}{2} \frac{\partial^2 \theta}{\partial x^2}(x,t) \\
+\theta_n-\theta_{n+1} &amp;= \theta(x=na,t)-\theta(x=(n+1)a,t) \simeq_{a \rightarrow 0} -a \frac{\partial \theta}{\partial x}(x,t) - \frac{a^2}{2} \frac{\partial^2 \theta}{\partial x^2}(x,t)
+\end{align*}\]</div>
+<div class="arithmatex">\[\begin{align*}
+J \frac{d^2\theta_n}{dt^2} = J  \frac{\partial^2\theta}{\partial t^2}
+\end{align*}\]</div>
+<p>L'équation discrète devient alors :</p>
+<div class="arithmatex">\[\begin{align*}
+J  \frac{\partial^2\theta}{\partial t^2} - C a^2 \frac{\partial^2\theta}{\partial x^2} = 0
+\end{align*}\]</div>
+<p>Soit finalement, en divisant par <span class="arithmatex">\(a\)</span>:</p>
+<div class="arithmatex">\[\begin{align*}
+\frac{\partial^2\theta}{\partial t^2} - v^2 \frac{\partial^2\theta}{\partial x^2} = 0
+\end{align*}\]</div>
+<h3 id="chane-continue-de-longueur-finie"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.3.3</span> chaı̂ne continue de longueur finie<a class="headerlink" href="#chane-continue-de-longueur-finie" title="Permanent link">¶</a></h3>
+<ul>
+<li>Le résultat de I-2-1-a reste vrai ici : l'équation de propagation continue est valable pour la chaîne refermée sur elle-même.</li>
+</ul>
+<p>La condition BVK permet d'obtenir les vecteurs d'onde propres :</p>
+<div class="arithmatex">\[\begin{align*}
+\theta(x+L,t)=\theta(x,t) &amp; \Rightarrow &amp; e^{iqL}=1 : qL \equiv 0 \pmod{2\pi}
+\end{align*}\]</div>
+<div class="arithmatex">\[\begin{align*}
+q_m = \frac{2\pi}{L}m &amp;,&amp; m \in \mathbb{Z}
+\end{align*}\]</div>
+<p><span class="arithmatex">\(q\)</span> appartient au même ensemble discret qu'en I-2-1-a en remplacant <span class="arithmatex">\(N a\)</span> par <span class="arithmatex">\(L\)</span>.</p>
+<ul>
+<li>On retrouve les résultats de la première partie : <span class="arithmatex">\(N\)</span> valeurs de <span class="arithmatex">\(q\)</span> dans l'intervalle <span class="arithmatex">\(\big] -\frac{N\pi}{L} , \frac{N\pi}{L} \big]\)</span>.</li>
+</ul>
+<h3 id="modele-de-debye"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.3.4</span> modèle de Debye<a class="headerlink" href="#modele-de-debye" title="Permanent link">¶</a></h3>
+<figure>
+<p><img alt="disque" src="disper3.gif"/>
+</p>
+<figcaption>Relation de dispersion du modèle Debye.</figcaption>
+</figure>
+<p>On tronque la relation de dispersion à l'intervalle  <span class="arithmatex">\(\big] -\frac{N\pi}{L} , \frac{N\pi}{L} \big]\)</span>.</p>
+<ul>
+<li>
+<p><span class="arithmatex">\(\omega_D = \frac{\pi}{a} v\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\omega_D = \frac{\pi}{2}\omega_c\)</span></p>
+</li>
+</ul>
+<p><span class="arithmatex">\(f_D(q)\)</span> est la tangente à l'origine de <span class="arithmatex">\(f(q)\)</span> qui est un sinus; cela explique le facteur <span class="arithmatex">\(\frac{\pi}{2}\)</span>.</p>
+<h3 id="validite-du-modele-de-debye"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.3.5</span> validité du modèle de Debye<a class="headerlink" href="#validite-du-modele-de-debye" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p><span class="arithmatex">\(\lambda_D = \frac{2\pi}{q_D} = 2a\)</span></p>
+</li>
+<li>
+<p>Le problème réside dans le fait que la description continue de la chaîne utilise une loi linéaire <span class="arithmatex">\(\omega = v |q|\)</span> dans la zone de Brillouin alors que les phénomènes ne le sont pas.</p>
+</li>
+</ul>
+<p>La description continue de la chaîne discrète est acceptable au voisinage de <span class="arithmatex">\(qa=0\)</span> (au milieu de la zone de Brillouin) où les deux relations de dispersion sont tangentes.</p>
+<ul>
+<li>Le modèle de Debye donne des solutions <span class="arithmatex">\(F(t-\frac{x}{v})\)</span> qui représente des signaux se propageant sans se déformer (l'amplitude et la forme de <span class="arithmatex">\(F\)</span> restent les mêmes). Pour que ces solutions décrivent correctement les ondes observées sur la chaîne discrète il faut <span class="arithmatex">\(qa &lt;&lt; 1\)</span>, c'est à dire que l'extension spatiale <span class="arithmatex">\(\Delta x\)</span> vérifie : <span class="arithmatex">\(\Delta x \gg a\)</span> et  <span class="arithmatex">\(\Delta t \gg \frac{a}{v}.\)</span></li>
+</ul>
+<h2 id="etude-du-comportement-dun-paquet-donde"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.4</span> Etude du comportement d’un paquet d’onde<a class="headerlink" href="#etude-du-comportement-dun-paquet-donde" title="Permanent link">¶</a></h2>
+<h3 id="propagation-sans-deformation"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.4.1</span> propagation sans déformation<a class="headerlink" href="#propagation-sans-deformation" title="Permanent link">¶</a></h3>
+<p>Dans le modèle de Debye, une onde progressive se dirigeant vers les <span class="arithmatex">\(x\)</span> croissants est décrite mathématiquement par : <span class="arithmatex">\(F(t-\frac{x}{v})\)</span> où <span class="arithmatex">\(F\)</span> est une fonction d'une seule variable déterminée une fois pour toute au moment de l'émission en bout de chaîne (<span class="arithmatex">\(x \rightarrow - \infty\)</span>). <span class="arithmatex">\(F\)</span> ne change pas au cours de la propagation : il n'y a pas de déformation.</p>
+<h3 id="expression-mathematique-de-la-propagation-sans-deformation"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.4.2</span> expression mathématique de la propagation sans déformation<a class="headerlink" href="#expression-mathematique-de-la-propagation-sans-deformation" title="Permanent link">¶</a></h3>
+<ul>
+<li>Utilisons la relation de dispersion du modèle de Debye : <span class="arithmatex">\(\omega = vq\)</span> pour <span class="arithmatex">\(q&gt;0\)</span>; alors :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\theta(x,t) = \mathbb{R}e \Big\{ \int_{0}^{q_D} dq \mathcal{A}(q)e^{iq(x-vt)} \Big\}
+\end{align*}\]</div>
+<p>Soit</p>
+<div class="arithmatex">\[\begin{align*}
+\theta(x,t) = F(x -vt) &amp; \,\,\,\,\,\text{avec} &amp; F(X) =   \mathbb{R}e \Big\{ \int_{0}^{q_D} dq \mathcal{A}(q)e^{iqX} \Big\}
+\end{align*}\]</div>
+<ul>
+<li>la phase associée au vecteur d'onde <span class="arithmatex">\(q\)</span> est <span class="arithmatex">\(q(x-vt)\)</span></li>
+<li>la phase associée au vecteur d'onde <span class="arithmatex">\(q'\)</span> est <span class="arithmatex">\(q'(x-vt)\)</span></li>
+</ul>
+<p>Pour que ces deux vecteur d'onde soient en phase, quelques soient <span class="arithmatex">\(q\)</span> et <span class="arithmatex">\(q'\)</span> choisis dans le paquet d'onde, il est nécessaire et suffisant que <span class="arithmatex">\(x-vt=0\)</span>, soit <span class="arithmatex">\(x(t)=vt\)</span>.</p>
+<h3 id="centre-du-paquet-donde"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.4.3</span> centre du paquet d’onde<a class="headerlink" href="#centre-du-paquet-donde" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>Le centre du paquet d'onde (et donc le paquet d'onde lui-même) est en mouvement uniforme de translation. </p>
+</li>
+<li>
+<p><span class="arithmatex">\(v_g = v_{\phi} = v\)</span> : tous les composantes du paquet ont des phases qui se déforment au même rythme (à la vitesse de phase).</p>
+</li>
+</ul>
+<h3 id="reflexion-transmission-dune-onde-incidente-sinusodale"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.4.4</span> réflexion - transmission d’une onde incidente sinusoı̈dale<a class="headerlink" href="#reflexion-transmission-dune-onde-incidente-sinusodale" title="Permanent link">¶</a></h3>
+<p>On considère l'onde incidente :</p>
+<div class="arithmatex">\[\begin{align*}
+\theta_i = B_i e^{-i\omega_0(t-\frac{x}{v})}
+\end{align*}\]</div>
+<p>La présence du <em>dioptre</em> en <span class="arithmatex">\(x=0\)</span> donne naissance à une onde refléchie et une onde transmise dont on calcule les amplitudes; on détermine ensuite les expressions complètes de ces deux ondes :</p>
+<div class="arithmatex">\[\begin{align*}
+\theta_r(0^{-},t) = r_{12} \theta_i(0^{-},t) = r_{12} B_i e^{-i\omega_0t} \Rightarrow \theta_r(x,t) = r_{12} B_i e^{-i\omega_0(t+\frac{x}{v})} \qquad \forall x \leq 0\\
+\theta_t(0^{+},t) = t_{12} \theta_i(0^{-},t) = t_{12} B_i e^{-i\omega_0t} \Rightarrow \theta_t(x,t) = t_{12} B_i e^{-i\omega_0(t-\frac{x}{v})} \qquad \forall x \geq 0
+\end{align*}\]</div>
+<p>On déduit la solution complète :</p>
+<div class="admonition eq">
+<p class="admonition-title">solution</p>
+<div class="arithmatex">\[\begin{align*}
+\text{si}\,\,\, &amp; x \leq0 : &amp; \theta (x,t) &amp; = (\theta_i + \theta_r)(x,t) &amp; = &amp; B_i e^{-i\omega_0t} \big[ e^{i\omega_0\frac{x}{v}} + r_{12} e^{-i\omega_0\frac{x}{v}} \big] \\
+\text{si}\,\,\, &amp; x \geq0 : &amp; \theta (x,t) &amp; = \theta_t (x,t) &amp; = &amp;  B_i e^{-i\omega_0t} t_{12} e^{i\omega_0\frac{x}{v}}.
+\end{align*}\]</div>
+</div>
+<h3 id="reflexion-transmission-dun-paquet-donde-quelconque"><span class="enumerate-headings-plugin enumerate-heading-plugin">2.4.5</span> réflexion - transmission d’un paquet d’onde quelconque<a class="headerlink" href="#reflexion-transmission-dun-paquet-donde-quelconque" title="Permanent link">¶</a></h3>
+<ul>
+<li>le paquet d'ondes sinusoïdales peut s'écrire, après avoir effectué le changement de variable  <span class="arithmatex">\(\omega = qv\)</span> :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\theta(x,t) = \mathbb{R}e \Big\{ \int_{0}^{\omega_D} d\omega \mathcal{B}_i(\omega)e^{i\big(q(\omega)x-\omega t \big)} \Big\}
+\end{align*}\]</div>
+<p>en ayant posé : <span class="arithmatex">\(\mathcal{B}_i(\omega) = \frac{\mathcal{A}(\frac{\omega}{v})}{v}\)</span>.</p>
+<ul>
+<li>L'équation de propagation est linéaire : cela signifie que la solution <span class="arithmatex">\(\theta(x,t)\)</span> est la somme des solutions engendrées par chacune des ondes sinusoïdales du paquet d'onde incident. On procède de la même manière qu'à la question précédente : on détermine les amplitudes des ondes réfléchie et transmises sachant que les coefficients de réflexion et transmission sont indépendants de <span class="arithmatex">\(\omega\)</span>:</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\theta_r(0^{-},t) = r_{12} \theta_i(0^{-},t) = r_{12}  \int_0^{\omega_D} \mathcal{B}_i(\omega) e^{-i\omega t} \Rightarrow \theta_r(x,t) =  r_{12}  \int_0^{\omega_D} \mathcal{B}_i(\omega) e^{-i\omega (t +\frac{x}{v}) }  \qquad \forall x \leq 0\\
+\theta_t(0^{+},t) = t_{12} \theta_i(0^{-},t) = t_{12}  \int_0^{\omega_D} \mathcal{B}_i(\omega) e^{-i\omega t} \Rightarrow \theta_t(x,t) =  t_{12}  \int_0^{\omega_D} \mathcal{B}_i(\omega) e^{-i\omega (t -\frac{x}{v}) }  \qquad \forall x \geq 0
+\end{align*}\]</div>
+<p>On obtient finalement :</p>
+<div class="admonition eq">
+<p class="admonition-title">solution</p>
+<div class="arithmatex">\[\begin{align*}
+\text{si}\,\,\, &amp; x \leq0  : &amp; \theta(x,t) &amp; =  \mathbb{R}e \Big\{ \int_0^{\omega_D} d\omega \mathcal{B}_i(\omega) e^{-i\omega t} \big[ e^{i\omega\frac{x}{v}} + r_{12} e^{-i\omega\frac{x}{v}} \big] \Big\} \\
+\text{si}\,\,\, &amp; x \geq0  : &amp; \theta(x,t) &amp; =  \mathbb{R}e \Big\{ \int_0^{\omega_D} d\omega \mathcal{B}_i(\omega) e^{-i\omega t} t_{12} e^{i\omega\frac{x}{v}} \Big\}.
+\end{align*}\]</div>
+</div>
+<ul>
+<li>
+<p>Le paquet d'onde incident se translate, à vitesse constante, dans le sens des <span class="arithmatex">\(x\)</span> croissants. On le suppose d'extension temporelle <span class="arithmatex">\(\Delta t\)</span>. A la date <span class="arithmatex">\(t=-\frac{\Delta t}{2}\)</span>, le front du paquet arrive en <span class="arithmatex">\(x=0\)</span> : la réflexion et la transmission commencent.</p>
+</li>
+<li>
+<p>Supposons <span class="arithmatex">\(\mathcal{B}_i(\omega)\)</span> non nul dans la bande de pulsations comprises entre <span class="arithmatex">\(\omega_0-\frac{\Delta \omega}{2}\)</span> et <span class="arithmatex">\(\omega_0+\frac{\Delta \omega}{2}\)</span>. Supposons que le centre du signal à <span class="arithmatex">\(t=t_0\)</span> soit en <span class="arithmatex">\(x_0\)</span> : toutes les ondes du paquet sont en phase.</p>
+</li>
+</ul>
+<p>Le signal en <span class="arithmatex">\(x_0\)</span> devient nul quand toutes les ondes se sont déphasées, c'est à dire à la date <span class="arithmatex">\(t=t_0+\Delta t\)</span> où <span class="arithmatex">\(\Delta t\)</span> est la durée de l'impulsion. A cette date, les phases des ondes du paquet sont réparties uniformément entre <span class="arithmatex">\(0\)</span> et <span class="arithmatex">\(2\pi\)</span> :</p>
+<div class="arithmatex">\[\begin{align*}
+(\omega_0-\frac{\Delta \omega}{2})\Delta t -  (\omega_0+\frac{\Delta \omega}{2})\Delta t = 2\pi
+\end{align*}\]</div>
+<p>soit</p>
+<div class="arithmatex">\[\begin{align*}
+\Delta \omega \Delta t = 4\pi
+\end{align*}\]</div>
+<p>L'extension spatiale du paquet est alors : <span class="arithmatex">\(\Delta x = v\Delta t = \frac{4\pi v}{\Delta \omega}\)</span></p>
+<p>A la limite pour un signal monochromatique, on retrouve une extension spatiale infinie.</p>
+<p>Au retrouve ainsi une expression du <a href="https://fr.wikipedia.org/wiki/Principe_d%27incertitude">principe d'Heisenberg</a>, vue ici comme une propriété fondamentale de la <a href="https://fr.wikipedia.org/wiki/Transformation_de_Fourier">transformation de Fourier</a>.</p>
+</div>
+</div>
+<footer>
+<div aria-label="footer navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-right" href="../chaine_balourds/" title="Chaîne avec balourds">Next <span class="icon icon-circle-arrow-right"></span></a>
+<a class="btn btn-neutral" href="../modes_propres_torsion/" title="Modes propres de torsion"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../modes_propres_torsion/" style="color: #fcfcfc">« Previous</a></span>
+<span><a href="../chaine_balourds/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script>var base_url = '..';</script>
+<script defer="" src="../js/theme_extra.js"></script>
+<script defer="" src="../js/theme.js"></script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+<script defer="" src="../extra.js"></script>
+<script defer="" src="../search/main.js"></script>
+<script defer="">
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+</body>
+</html>

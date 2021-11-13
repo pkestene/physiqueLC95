@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Chaîne avec balourds - Physique - ENS Lyon/Cachan - 1995</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" rel="stylesheet"/>
+<script>
+    // Current page data
+    var mkdocs_page_name = "Cha\u00eene avec balourds";
+    var mkdocs_page_input_path = "chaine_balourds/index.md";
+    var mkdocs_page_url = null;
+  </script>
+<script defer="" src="../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</link></head>
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Physique - ENS Lyon/Cachan - 1995</a>
+<div role="search">
+<form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
+</div>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modes_propres_torsion/">Modes propres de torsion</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chaine_continue/">Approximation de la chaîne continue</a>
+</li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="./">Chaîne avec balourds</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#equations-generales">Equations générales</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#moment-dinertie">moment d’inertie</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#nouvelle-equation-du-mouvement">nouvelle équation du mouvement</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#nouvelle-expression-de-lenergie-mecanique">nouvelle expression de l’énergie mécanique</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#existence-de-solutions-exactes">existence de solutions exactes</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#approximation-des-petits-angles">Approximation des petits angles</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#recherche-de-la-nouvelle-relation-de-dispersion">recherche de la nouvelle relation de dispersion</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#bande-de-frequences-permises">bande de fréquences permises</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#approximation-de-la-chane-continue">Approximation de la chaı̂ne continue</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#equation-du-mouvement">équation du mouvement</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#approximation-des-petits-angles_1">Approximation des petits angles</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#reflexion-refraction">réflexion-réfraction ?</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#cas-omega_-0-omega_0">cas \(\omega_ 0 &lt; \omega_0'\)</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#region-1">région 1</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#region-2">région 2</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#question-finale-evocation-de-leffet-tunnel">question finale : évocation de l’effet tunnel</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Physique - ENS Lyon/Cachan - 1995</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="..">Docs</a> »</li>
+<li>Chaîne avec balourds</li>
+<li class="wy-breadcrumbs-aside">
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<h1 id="chane-avec-balourd"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.</span> Chaı̂ne avec balourd<a class="headerlink" href="#chane-avec-balourd" title="Permanent link">¶</a></h1>
+<h2 id="equations-generales"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1</span> Equations générales<a class="headerlink" href="#equations-generales" title="Permanent link">¶</a></h2>
+<h3 id="moment-dinertie"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.1</span> moment d’inertie<a class="headerlink" href="#moment-dinertie" title="Permanent link">¶</a></h3>
+<p>On applique le théorème de Huygens (qu'on va redémontrer).</p>
+<div class="admonition th">
+<p class="admonition-title">Théorème de Huygens</p>
+<div class="arithmatex">\[\begin{align*}
+J' = J + Ml^2
+\end{align*}\]</div>
+</div>
+<p>Démonstration (rappel):</p>
+<p>Soit (S) un solide et <span class="arithmatex">\(\Delta'\)</span> une droite. On cherche le moment d'inertie de (S) par rapport à <span class="arithmatex">\(\Delta'\)</span>.  On introduit la droite <span class="arithmatex">\(\Delta\)</span>, passant par G (centre d'inertie de (S) ) et parallèle à <span class="arithmatex">\(\Delta'\)</span>. <span class="arithmatex">\(\Delta'\)</span> est la translatée de <span class="arithmatex">\(\Delta\)</span> par le vecteur unitaire <span class="arithmatex">\(\vec{u}\)</span> sur une distance <span class="arithmatex">\(l\)</span>.</p>
+<p>On appelle <span class="arithmatex">\(M\)</span> le point courant décrivant le volume de (S) et P' (resp. P) le projeté orthogonal sur <span class="arithmatex">\(\Delta'\)</span> (resp. <span class="arithmatex">\(\Delta\)</span>).</p>
+<p>Par définition du moment d'inertie :</p>
+<div class="arithmatex">\[\begin{align*}
+J' = \iiint_{S} (MP')^{2} \, dm
+\end{align*}\]</div>
+<p>On décompose <span class="arithmatex">\((MP')^2\)</span> en introduisant P :</p>
+<div class="arithmatex">\[\begin{align*}
+(MP')^{2} = (\overrightarrow{MP} + \overrightarrow{PP'} )^{2} = MP^{2} + 2\overrightarrow{MP} . \overrightarrow{PP'} + l^2
+\end{align*}\]</div>
+<p>On renvoit ceci dans la définition de <span class="arithmatex">\(J'\)</span> :</p>
+<div class="arithmatex">\[\begin{align*}
+J' = \iiint_{S} MP^{2}  dm  + 2 \Big( \iiint_{S} dm  \overrightarrow{MP} \Big) . d\vec{u} + \Big(  \iiint_{S} dm \Big) l^2
+\end{align*}\]</div>
+<p>Le premier terme donne <span class="arithmatex">\(J\)</span>, le troisième <span class="arithmatex">\(Ml^2\)</span> et le second terme est nul car :</p>
+<div class="arithmatex">\[\begin{align*}
+\vec{u} . \iiint_{S} dm \overrightarrow{MP} = \vec{u} . \iiint_{S} dm ( \overrightarrow{MG} + \overrightarrow{GP} ) = \vec{u} . \iiint_{S} dm  \overrightarrow{MG} +  \vec{u} . \iiint_{S} dm  \overrightarrow{GP}
+\end{align*}\]</div>
+<p>La première intégrale est nulle d'après la propritété remarquable d'un centre de masse; et la seconde intégrale est nulle car <span class="arithmatex">\(\vec u\)</span> et <span class="arithmatex">\(\overrightarrow{GP}\)</span> sont orthogonaux. CQFD.</p>
+<figure>
+<p><img alt="disque" src="huygens.gif"/>
+</p>
+<figcaption></figcaption>
+</figure>
+<h3 id="nouvelle-equation-du-mouvement"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.2</span> nouvelle équation du mouvement<a class="headerlink" href="#nouvelle-equation-du-mouvement" title="Permanent link">¶</a></h3>
+<p>Il faut à présent tenir compte du couple exercé en <span class="arithmatex">\(O_n\)</span> par le poids appliqué en <span class="arithmatex">\(G_n\)</span>; soit en projection sur l'axe de la chaîne :</p>
+<div class="arithmatex">\[\begin{align*}
+( \overrightarrow{O_nG_n} \wedge M\overrightarrow{g} ). \vec{u_x} = - Mgl \sin \theta_n
+\end{align*}\]</div>
+<div class="admonition eq">
+<p class="admonition-title">nouvelle équation du mouvement</p>
+<div class="arithmatex">\[\begin{align*}
+J'\ddot{\theta_n} + C(2\theta_n - \theta_{n-1}  - \theta_{n+1}) + Mgl\sin \theta_n = 0
+\end{align*}\]</div>
+</div>
+<h3 id="nouvelle-expression-de-lenergie-mecanique"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.3</span> nouvelle expression de l’énergie mécanique<a class="headerlink" href="#nouvelle-expression-de-lenergie-mecanique" title="Permanent link">¶</a></h3>
+<p>Il faut tenir compte d'une énergie potentielle de pesanteur <span class="arithmatex">\(E_{pp}\)</span> (puisque maintenant le travail du poids n'est plus nul); on choisit l'origine pour <span class="arithmatex">\(\theta_n = 0\)</span> :</p>
+<div class="arithmatex">\[\begin{align*}
+E_{pp}(n) = - W(poids) = - Mg \Delta(z) = -Mgl(\cos \theta_n - 1)
+\end{align*}\]</div>
+<p>Soit :</p>
+<div class="arithmatex">\[\begin{align*}
+E = \sum_{n \in \mathcal{Z}} E_c(n) + Ep_{torsion}(n) + Ep_{pesanteur}(n) = \sum_{n \in \mathcal{Z}} \Big[ \frac{J' \dot\theta_n}{2} + C\theta_n(\theta_n - \theta_{n+1}) + Mgl(1-\cos \theta_n) \Big]
+\end{align*}\]</div>
+<h3 id="existence-de-solutions-exactes"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.1.4</span> existence de solutions exactes<a class="headerlink" href="#existence-de-solutions-exactes" title="Permanent link">¶</a></h3>
+<p>Il n'existe pas de solutions en onde plane car le dernier terme de l'équation n'est pas linéaire en <span class="arithmatex">\(\theta\)</span> (<span class="arithmatex">\(e^{i\omega t}\)</span> et <span class="arithmatex">\(\sin (e^{i\omega t})\)</span> sont des fonctions linéairement indépendantes !).</p>
+<h2 id="approximation-des-petits-angles"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.2</span> Approximation des petits angles<a class="headerlink" href="#approximation-des-petits-angles" title="Permanent link">¶</a></h2>
+<h3 id="recherche-de-la-nouvelle-relation-de-dispersion"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.2.1</span> recherche de la nouvelle relation de dispersion<a class="headerlink" href="#recherche-de-la-nouvelle-relation-de-dispersion" title="Permanent link">¶</a></h3>
+<ul>
+<li>On développe l'énergie potentielle de pesanteur autour de la position d'équilibre : <span class="arithmatex">\(E_{pp}(n) = Mgl\frac{\theta_n^2}{2}\)</span>; on peut alors linéariser l'équation du mouvement :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+J'\ddot{\theta_n} + C(2\theta_n - \theta_{n-1}  - \theta_{n+1}) + Mgl \theta_n = 0
+\end{align*}\]</div>
+<p>Des solutions progressives peuvent exister à condition que :</p>
+<div class="arithmatex">\[\begin{align*}
+-J'\omega^2 + 4C\sin^2 \frac{qa}{2} + Mgl = 0
+\end{align*}\]</div>
+<ul>
+<li>on réécrit cette relation sous la forme :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\omega(q) = \omega_{0}' \sqrt{1 + \frac{4C}{J'} \frac{\sin^{2} \frac{qa}{2}}{\omega_{0}^{'2}} }
+\end{align*}\]</div>
+<h3 id="bande-de-frequences-permises"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.2.2</span> bande de fréquences permises<a class="headerlink" href="#bande-de-frequences-permises" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>pulsation de coupure basse : <span class="arithmatex">\(\omega_{0}'\)</span></p>
+</li>
+<li>
+<p>pulsation de coupure haute : <span class="arithmatex">\(\omega_{c}' = \omega_{0}' \sqrt{1 + \frac{4C}{J'\omega_{0}^{'2} } }\)</span></p>
+</li>
+<li>
+<p>en se placant en bord de zon de Brillouin (<span class="arithmatex">\(\theta_{n+1} = -\theta_n\)</span>), on obtient l'équation :</p>
+</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+J' \ddot\theta_n + (4C+J'\omega_{0}^{'2})\theta_n = 0
+\end{align*}\]</div>
+<p>c'est un mouvement harmonique à la pulsation de coupure haute : <span class="arithmatex">\(\omega_{c}'\)</span></p>
+<p>En se placant au centre de la zone de Brillouin (<span class="arithmatex">\(\theta_{n+1} = \theta_n\)</span>), on obtient cete fois :</p>
+<div class="arithmatex">\[\begin{align*}
+J' \ddot\theta_n + Mgl\theta_n = 0
+\end{align*}\]</div>
+<p>mouvement harmonique à la pulsation de coupure basse.</p>
+<h2 id="approximation-de-la-chane-continue"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.3</span> Approximation de la chaı̂ne continue<a class="headerlink" href="#approximation-de-la-chane-continue" title="Permanent link">¶</a></h2>
+<h3 id="equation-du-mouvement"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.3.1</span> équation du mouvement<a class="headerlink" href="#equation-du-mouvement" title="Permanent link">¶</a></h3>
+<div class="admonition eq">
+<p class="admonition-title">relation entre <span class="arithmatex">\(J'\)</span>, <span class="arithmatex">\(M\)</span> et <span class="arithmatex">\(\mu\)</span></p>
+<div class="arithmatex">\[\begin{align*}
+J' &amp; =  &amp;\mathcal{J'} a \\
+M  &amp; =  &amp; \mu a
+\end{align*}\]</div>
+</div>
+<ul>
+<li>on fait tendre <span class="arithmatex">\(a\)</span> vers zéro dans l'équation de <span class="arithmatex">\(\theta_n\)</span> :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\frac{\partial^2 \theta}{\partial t^2} - \frac{\mathcal{C}}{\mathcal{J'}} \frac{\partial^2 \theta}{\partial x^2} + \frac{\mu gl}{\mathcal{J'}} \sin \theta = 0
+\end{align*}\]</div>
+<h3 id="approximation-des-petits-angles_1"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.3.2</span> Approximation des petits angles<a class="headerlink" href="#approximation-des-petits-angles_1" title="Permanent link">¶</a></h3>
+<ul>
+<li>on réécrit l'équation en approximant <span class="arithmatex">\(\sin \theta(x,t)\)</span> par <span class="arithmatex">\(\theta(x,t)\)</span> :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\frac{\partial^2 \theta}{\partial t^2} - \frac{\mathcal{C}}{\mathcal{J'}} \frac{\partial^2 \theta}{\partial x^2} + \frac{\mu gl}{\mathcal{J'}} \theta = 0
+\end{align*}\]</div>
+<p>On peut alors écrire la condition d'existence de solutions progressives <span class="arithmatex">\(e^{i(qx-\omega t)}\)</span> :</p>
+<div class="arithmatex">\[\begin{align*}
+-\omega^2 + \frac{C}{\mathcal{J'}}q^2 + \frac{\mu gl}{\mathcal{J'}}
+\end{align*}\]</div>
+<ul>
+<li>la relation de dispersion :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\omega = f_{c'}(q) = \sqrt{\frac{\mathcal{C}}{\mathcal{J'}} q^2 + \frac{\mu gl}{\mathcal{J'}}} = \sqrt{ {v'}^2 q^2 + {\omega_{0}'}^2}
+\end{align*}\]</div>
+<ul>
+<li>le graphe :</li>
+</ul>
+<figure>
+<p><img alt="disque" src="disper4.gif"/>
+</p>
+<figcaption>Relation de dispersion de la chaîne avec balourd, modèle continu.</figcaption>
+</figure>
+<p>Il s'agit d'une branche hyperbole ayant pour asymptote la courbe <span class="arithmatex">\(\omega = v|q| = f_c(q)\)</span>.</p>
+<ul>
+<li>la coupure basse correspond au milieu de la zone de Brillouin (<span class="arithmatex">\(\theta_{n+1} = \theta_n\)</span>, tout se passe comme si la torsion n'intervenait pas). Ici, en continu, on peut déterminer la pulsation de coupure basse en négligeant dans l'équation continue les dérivées partielles spatiales de <span class="arithmatex">\(\theta\)</span> :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\frac{\partial^2 \theta}{\partial t^2} + \frac{\mu gl}{\mathcal{J'}} \theta = 0
+\end{align*}\]</div>
+<p>C'est la même coupure basse basse qu'en discret puisque la torsion n'intervient pas.</p>
+<h3 id="reflexion-refraction"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.3.3</span> réflexion-réfraction ?<a class="headerlink" href="#reflexion-refraction" title="Permanent link">¶</a></h3>
+<ul>
+<li>[<span class="arithmatex">\(\omega_{0} &lt; \omega_{0}'\)</span> :] <span class="arithmatex">\(\omega_{0}^2 - {\omega_{0}'}^2 = \frac{\mathcal{C}}{\mathcal{J'}}q^2 &lt; 0\)</span> donc <span class="arithmatex">\(q\)</span> est <strong>imaginaire pur</strong> : <span class="arithmatex">\(q = i |q|\)</span>.</li>
+</ul>
+<p>Dans le milieu 1, on a une simple réflexion.</p>
+<p>Dans le milieu 2, on obtient une solution de type <strong>onde évanescente</strong> :</p>
+<div class="arithmatex">\[\begin{align*}
+t_{12}Ae^{-|q|x}e^{-i\omega_{0}t}
+\end{align*}\]</div>
+<ul>
+<li>[<span class="arithmatex">\(\omega_{0} &gt; \omega_{0}'\)</span> :]  <span class="arithmatex">\(\omega_{0}^2 - {\omega_{0}'}^2 = \frac{\mathcal{C}}{\mathcal{J'}}q^2 &gt; 0\)</span> donc q est <strong>réel</strong>.</li>
+</ul>
+<p>Il y a transmission d'une onde progressive dans le milieu 2;</p>
+<h3 id="cas-omega_-0-omega_0"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.3.4</span> cas <span class="arithmatex">\(\omega_ 0 &lt; \omega_0'\)</span><a class="headerlink" href="#cas-omega_-0-omega_0" title="Permanent link">¶</a></h3>
+<ul>
+<li>solution générale (en complexe) :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\text{si}\,\,\, &amp; x \leq0 &amp; : \theta(x,t) = &amp; A_i e^{-i(\omega_0 t - \frac{x}{v} )} +  A_r e^{-i(\omega_0 t + \frac{x}{v} )}  \\
+\text{si}\,\,\, &amp; x \geq0 &amp; : \theta(x,t) = &amp; A_t e^{-K_0 x} e^{-i\omega_0 t}
+\end{align*}\]</div>
+<p>On a éliminé d'office la solution divergente en <span class="arithmatex">\(x \rightarrow +\infty\)</span> dans le milieu 2.</p>
+<ul>
+<li>conditions aux limites :</li>
+</ul>
+<p>On suppose <span class="arithmatex">\(A_i\)</span> réel et on pose :</p>
+<div class="arithmatex">\[\begin{align*}
+A_r = |A_r| e^{i\phi_r}\\
+A_t = |A_t| e^{i\phi_t}
+\end{align*}\]</div>
+<ul>
+<li>
+<p>on va utiliser les conditions aux limites suivantes:</p>
+<ul>
+<li>[<span class="arithmatex">\(\theta\)</span> est continu en x=0 :] <span class="arithmatex">\(A_i + A_r = A_t\)</span>.
+Cela donne deux équations (une pour la partie réelle et une pour la partie imaginaire)</li>
+<li>[la puissance transmise <span class="arithmatex">\(\mathcal{G}\)</span> est continue en x=0 :] (on utilise les quantités réelles).</li>
+</ul>
+</li>
+</ul>
+<p>Ce qui donne :</p>
+<div class="arithmatex">\[\begin{align*}
+\Big( -\mathcal{C} \frac{\partial \theta}{\partial t} \frac{\partial \theta}{\partial x}\Big)_{x=0^{-}} &amp; = &amp; \Big(-\mathcal{C} \frac{\partial \theta}{\partial t} \frac{\partial \theta}{\partial x}\Big)_{x=0^{+}} \\
+\end{align*}\]</div>
+<p>et</p>
+<div class="arithmatex">\[\begin{align*}
+\mathcal{J}v |A_i|^2 \omega_{0}^2 \sin ^2 (\omega_0 t) - \mathcal{J}v |A_r|^2 \omega_{0}^2 \sin ^2 (\omega_0 t - \phi_r) &amp; = &amp; -\mathcal{C}|A_t|^2 K_0 \omega_0 \sin (\omega_0 t - \phi_t) \cos (\omega_0 t - \phi_t) 
+\end{align*}\]</div>
+<p>Après simplifications et identification des coefficients sur la base <span class="arithmatex">\(\{ \sin 2\omega_0 t ; \cos 2\omega_0 t \}\)</span>, on obtient deux nouvelles équations.</p>
+<p>Finalement, il reste un système à quatre inconnues (<span class="arithmatex">\(|A_r|, |A_t|, \phi_r, \phi_t\)</span>) que l'on résout :</p>
+<div class="arithmatex">\[\begin{align*}
+|A_r| &amp; = &amp; |A_i| \\
+|A_t| &amp; = &amp; \frac{2}{ \sqrt{1+ \big( \frac{K_0 v}{\omega_0} \Big)^2 } }|A_i| \\
+\phi_r &amp; = &amp; -2 \phi \\
+\phi_t &amp; = &amp; - \phi
+\end{align*}\]</div>
+<p>où la phase <span class="arithmatex">\(\phi\)</span> est définie par :</p>
+<div class="arithmatex">\[\begin{align*}
+\cos \phi = \frac{1}{ \sqrt{1+ \big( \frac{K_0 v}{\omega_0} \Big)^2 }}\\
+\sin \phi = \frac{ \frac{K_0 v}{\omega_0} }{ \sqrt{1+ \big( \frac{K_0 v}{\omega_0} \Big)^2 }}
+\end{align*}\]</div>
+<p>En notation complexe :</p>
+<div class="arithmatex">\[\begin{align*}
+A_r &amp; = &amp; A_i e^{-i2\phi} \\
+A_t &amp; = &amp; \frac{2}{ \sqrt{1+ \big( \frac{K_0 v}{\omega_0} \Big)^2 }} A_i e^{-i\phi}
+\end{align*}\]</div>
+<ul>
+<li>on peut vérifier que <span class="arithmatex">\(\mathcal{G}\)</span> conserve la même expression que pour la chaîne sans balourd. La nouvelle expresion de <span class="arithmatex">\(\mathcal{E}\)</span>, tenant compte de l'énergie potentielle de pesanteur est :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\text{si}\,\,\, &amp; x \leq0 &amp; : \mathcal{E} (x,t) &amp;= \frac{\mathcal{J}}{2} \big( \frac{\partial \theta}{\partial t} \big)^2 + \frac{\mathcal{C}}{2} \big( \frac{\partial \theta}{\partial x} \big)^2 \\
+\text{si}\,\,\, &amp; x &gt;0 &amp; : \mathcal{E} (x,t) &amp;= \frac{\mathcal{J'}}{2} \big( \frac{\partial \theta}{\partial t} \big)^2 + \frac{\mathcal{C}}{2} \big( \frac{\partial \theta}{\partial x} \big)^2 + \mu gl \frac{\theta^2}{2}
+\end{align*}\]</div>
+<p>Après simplifications, il reste : <span class="arithmatex">\(\frac{\partial \mathcal{E}}{\partial t} = - \frac{\partial}{\partial x} \big( -\mathcal{C}\frac{\partial \theta}{\partial t}\frac{\partial \theta}{\partial t} \big)\)</span> dans les deux milieux et donc <span class="arithmatex">\(\mathcal{G}\)</span> conserve la même expression. Cela était évident puisque la pesanteur n'intervient pas dans le couplage des disques et donc dans le transfert d'énergie.</p>
+<p>Dans les deux régions, il n'y a pas de transfert moyen d'énergie :  <span class="arithmatex">\(&lt;\mathcal{G}(x,t)&gt; = 0\)</span>.</p>
+<ul>
+<li>
+<p>l'onde réfléchie a la même amplitude que l'onde incidente; elle transporte la même énergie mais en sens inverse.</p>
+</li>
+<li>
+<p>l'onde transmise est évanescente : il n'y a pas de propagation d'énergie.</p>
+</li>
+<li>
+<p>En électromagnétisme : passage d'une OEM entre le vide et un bon conducteur (effet de peau). Dans un bon conducteur, il n'y pas d'onde progressive mais évanescente : l'énergie est dissipée par effet Joule dans le volume de conducteur.</p>
+</li>
+</ul>
+<h3 id="region-1"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.3.5</span> région 1<a class="headerlink" href="#region-1" title="Permanent link">¶</a></h3>
+<ul>
+<li>l'onde incidente s'écrit :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\theta_i(x,t) = \mathbb{R}e \Big\{ \int_{\omega_o-\frac{\Delta \omega}{2}}^{\omega_o+\frac{\Delta \omega}{2}} d\omega \mathcal{B}_i(\omega)e^{iq(x-vt)} \Big\}
+\end{align*}\]</div>
+<p>le mouvement du centre du paquet d'onde est une translation uniforme : <span class="arithmatex">\(x(t)=vt\)</span>.</p>
+<ul>
+<li>Chaque composante est réfléchie avec le coefficient complexe calculé précédemment (en remplacant <span class="arithmatex">\(\omega_0\)</span> par <span class="arithmatex">\(\omega\)</span>) :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\theta_r(x,t) = \mathbb{R}e \Big\{ \int_{\omega_0-\frac{\Delta \omega}{2}}^{\omega_o+\frac{\Delta \omega}{2}} d\omega \mathcal{B}_i(\omega) R(\omega) e^{-iq(x+vt)} \Big\}
+\end{align*}\]</div>
+<p>où <span class="arithmatex">\(R(\omega) = e^{-2i\phi}\)</span> et <span class="arithmatex">\(\phi(\omega)\)</span> tel que :</p>
+<div class="arithmatex">\[\begin{align*}
+\cos \phi(\omega) = \frac{1}{ \sqrt{1+ \big( \frac{K(\omega) v}{\omega} \Big)^2 }}\\
+\sin \phi(\omega) = \frac{ \frac{K(\omega) v}{\omega} }{ \sqrt{1+ \big( \frac{K(\omega) v}{\omega} \Big)^2 }}
+\end{align*}\]</div>
+<ul>
+<li>la phase de la composante <span class="arithmatex">\(\omega\)</span> du paquet d'onde réfléchi est <span class="arithmatex">\(q(\omega)x+\omega t + 2\phi(\omega)\)</span>. On écrit que cette phase doit être stationnaire (ondes en phase; interférence constructive) autour de <span class="arithmatex">\(\omega_0\)</span> :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\frac{d}{d\omega}(q(\omega)x + \omega t + 2\phi(\omega)) = 0 \\
+\end{align*}\]</div>
+<p>soit</p>
+<div class="arithmatex">\[\begin{align*}
+x_r(t) = -v \big[ t + 2\phi'(\omega_0) \big]
+\end{align*}\]</div>
+<p>On peut calculer assez facilement <span class="arithmatex">\(\phi'(\omega_0)\)</span> en dérivant <span class="arithmatex">\(\tan \phi(\omega)\)</span>; on obtient :</p>
+<div class="arithmatex">\[\begin{align*}
+\frac{d\phi}{d\omega} \Big|_{\omega_0} = -vv' \frac{ {\omega_0'}^2 \sqrt{ {\omega_0'}^2 - \omega_0^2 } }{ ({\omega_0'}^2 - \omega_0^2) \big[ ({\omega_0'}^2 - \omega_0^2)v^2 + \omega^2 {v'}^2 \big]  }
+\end{align*}\]</div>
+<p>Cette expression est homogène à l'inverse d'une pulsation donc à un temps, qui plus est négatif :</p>
+<div class="arithmatex">\[\begin{align*}
+\frac{d\phi}{d\omega} \Big|_{\omega_0} = -\tau
+\end{align*}\]</div>
+<ul>
+<li>Il s'agit d'un mouvement uniforme à la vitesse <span class="arithmatex">\(v\)</span> :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+x_r(t) = -v (t - 2 \tau)
+\end{align*}\]</div>
+<p><span class="arithmatex">\(2\tau\)</span> est un retard à la réflexion. Alors que le centre du paquet d'onde incident arrive sur le dioptre (<span class="arithmatex">\(x=0\)</span>) à <span class="arithmatex">\(t=0\)</span>, le paquet réfléchi émerge à <span class="arithmatex">\(t=2\tau\)</span>.</p>
+<h3 id="region-2"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.3.6</span> région 2<a class="headerlink" href="#region-2" title="Permanent link">¶</a></h3>
+<ul>
+<li>Chaque composante du paquet incident donne une onde transmise avec le coefficient complexe : <span class="arithmatex">\(\frac{2}{ \sqrt{1 + \frac{K(\omega)}{q(\omega)} } } e^{-i\phi(\omega)}\)</span> d'où :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\theta_2(x,t) &amp; = &amp; \mathbb{R}e \Big\{ \int_{\omega_0-\frac{\Delta \omega}{2}}^{\omega_0+\frac{\Delta \omega}{2}} d\omega \mathcal{B}_i(\omega)\frac{2}{ \sqrt{1 + \frac{K(\omega)}{q(\omega)} } } e^{-i\phi(\omega)} e^{-iK(\omega)x} e^{-i\omega t} \Big\}\\
+\theta_2(x,t) &amp; = &amp; \int_{\omega_o-\frac{\Delta \omega}{2}}^{\omega_o+\frac{\Delta \omega}{2}} d\omega \mathcal{B}_i(\omega)\frac{2}{ \sqrt{1 + \frac{K(\omega)}{q(\omega)} } } e^{-K(\omega)x} \cos (\omega t + \phi(\omega))
+\end{align*}\]</div>
+<ul>
+<li>Ici on ne peut pas trouver d'abscisse correspondant à un centre du paquet d'onde car <span class="arithmatex">\(x\)</span> et <span class="arithmatex">\(t\)</span> ne sont plus couplées dans la phase!</li>
+</ul>
+<p>L'amplitude est maximale lorsqu'il y a interférence constructive :  <span class="arithmatex">\(\frac{d}{d\omega} (\omega t + \phi(\omega)) = 0\)</span>; soit <span class="arithmatex">\(t= \tau\)</span>.</p>
+<ul>
+<li>
+<p>On peut interpréter ce phénomène en disant que :</p>
+<ul>
+<li>[<span class="arithmatex">\(t&gt;0\)</span> :] le paquet incident se déplace vers le dioptre.</li>
+<li>[<span class="arithmatex">\(t=0\)</span> :] le paquet incident arrive sur le dioptre.</li>
+<li>[<span class="arithmatex">\(0 \leq t \leq \tau\)</span> :] le paquet incident pénètre dans la région 2.</li>
+<li>[<span class="arithmatex">\(t=\tau\)</span> :] maximun d'amplitude de l'onde transmise; le paquet incident fait demi tour.</li>
+<li>[<span class="arithmatex">\(\tau \leq t \leq 2\tau\)</span> :] naissance du paquet réfléchi</li>
+<li>[<span class="arithmatex">\(t=2\tau\)</span> :] le paquet réfléchi émerge du dioptre.</li>
+</ul>
+</li>
+</ul>
+<div class="admonition remark">
+<p class="admonition-title">remarque</p>
+<p>Ce phénomène se rencontre dans d'autres domaines de la physique : l'optique non linéaire : on appelle cela l'<a href="https://fr.wikipedia.org/wiki/Effet_Goos%E2%80%93H%C3%A4nchen">effet Goos-Hänchen</a>.</p>
+</div>
+<figure>
+<p><img alt="disque" src="goos.gif"/>
+</p>
+<figcaption>Effet Goss-Hänchen en optique.</figcaption>
+</figure>
+<h3 id="question-finale-evocation-de-leffet-tunnel"><span class="enumerate-headings-plugin enumerate-heading-plugin">3.3.7</span> question finale : évocation de l’effet tunnel<a class="headerlink" href="#question-finale-evocation-de-leffet-tunnel" title="Permanent link">¶</a></h3>
+<ul>
+<li>solution générale en complexe :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\textrm{région} 1 &amp; : &amp; \theta_1(x,t) &amp;= A_i e^{i(qx-\omega_0 t)} + A_r e^{-i(qx+\omega_0 t) }\\
+\textrm{région} 2 &amp; : &amp; \theta_2(x,t) &amp;= ( B_1 \cosh K_0x + B_2 \sinh K_0x ) e^{-i\omega_0 t}\\
+\textrm{région} 3 &amp; : &amp; \theta_3(x,t) &amp;= C_1 e^{i[q(x-d)-\omega_0 t]} +  C_2 e^{-i[q(x-d)+\omega_0 t]}
+\end{align*}\]</div>
+<ul>
+<li>La question nécessite quelques calculs pour arriver à la réponse de l'énoncé!</li>
+</ul>
+<p>Les conditions aux limites :</p>
+<ul>
+<li>on suppose qu'il n'y a pas de source en <span class="arithmatex">\(x = +\infty\)</span> donc <span class="arithmatex">\(C_2 = 0\)</span>.</li>
+<li><span class="arithmatex">\(\theta\)</span> est continu en <span class="arithmatex">\(x=0\)</span> et <span class="arithmatex">\(x=d\)</span> :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+A_i + A_r &amp; = &amp; C_1 \\
+B_1 \cosh K_0d + B_2 \sinh K_0d &amp; = &amp; C_1
+\end{align*}\]</div>
+<ul>
+<li>la puissance transmise est continue en <span class="arithmatex">\(x=0\)</span> et <span class="arithmatex">\(x=d\)</span> :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\mathcal{J}v |A_i|^2 \omega_0^2 \sin^2 (\omega_0 t ) &amp; = &amp; - \mathcal{C} \frac{\partial \theta}{\partial t} \frac{\partial \theta}{\partial x} \Big|_{x=0^{+}}\\
+ - \mathcal{C} \frac{\partial \theta}{\partial t} \frac{\partial \theta}{\partial x} \Big|_{x=d^{-}} &amp; = &amp; \mathcal{J}v |C_1|^2 \omega_0^2 \sin^2 (\omega_0 t - \phi_3)
+\end{align*}\]</div>
+<p>On détermine les expressions de <span class="arithmatex">\(- \mathcal{C} \frac{\partial \theta}{\partial t} \frac{\partial \theta}{\partial x} \Big|_{x=0^{+}}\)</span> et <span class="arithmatex">\(-\mathcal{C} \frac{\partial \theta}{\partial t} \frac{\partial \theta}{\partial x} \Big|_{x=d^{-}}\)</span> à partir des expressions de <span class="arithmatex">\(\frac{\partial \theta}{\partial x}\)</span> et <span class="arithmatex">\(\frac{\partial \theta}{\partial t}\)</span> dans la région 2.</p>
+<p>Après quelques calculs en complexe on trouve les coefficients <span class="arithmatex">\(B_1\)</span> et <span class="arithmatex">\(B_2\)</span> en fonction de <span class="arithmatex">\(C\)</span>; puis <span class="arithmatex">\(C\)</span> en fonction de <span class="arithmatex">\(A_i\)</span> :</p>
+<div class="arithmatex">\[\begin{align*}
+B_1 = \sqrt{1+ \big(\frac{\omega_0}{K_0v}  \big)^2} \cosh (K_0d - i\phi' ) C \\
+B_1 =-\sqrt{1+ \big(\frac{\omega_0}{K_0v}  \big)^2} \sinh (K_0d - i\phi' ) C
+\end{align*}\]</div>
+<p>où l'angle <span class="arithmatex">\(\phi'\)</span> est défini par :</p>
+<div class="arithmatex">\[\begin{align*}
+\cos \phi' = \frac{1}{\sqrt{1+ \big(\frac{\omega_0}{K_0v} \big)^2 }} = \sin \phi\\
+\sin \phi' = \frac{ \frac{\omega_0}{K_0v} }{ \sqrt{1+ \big(\frac{\omega_0}{K_0v} \big)^2 }} = \cos \phi
+\end{align*}\]</div>
+<p>On remarque que <span class="arithmatex">\(\phi'=\frac{\pi}{2} - \phi\)</span>.</p>
+<p>On pose <span class="arithmatex">\(2\psi = \phi - \phi' - \frac{\pi}{2} = 2\phi - \pi\)</span> (<span class="arithmatex">\(\psi\)</span> joue le rôle du <span class="arithmatex">\(\phi\)</span> de l'énoncé puisque <span class="arithmatex">\(\phi\)</span> conserve la signification qu'il a dans les questions précédentes). On a alors :</p>
+<div class="arithmatex">\[\begin{align*}
+C = \frac{\sinh 2i\psi}{\sinh (K_0d+2i\psi)}A_i
+\end{align*}\]</div>
+<p>C'est la formule de l'énoncé.</p>
+<div class="admonition eq">
+<p class="admonition-title">la solution complète</p>
+<div class="arithmatex">\[\begin{align*}
+A_r&amp; =&amp; \frac{\sinh (K_0d)}{\sinh (K_0d+2i\psi) } \sinh^2 2i\psi A_i \\
+B_1&amp; =&amp; \frac{\cosh (K_0d+i\psi)}{\sinh (K_0d +2i\psi) } \frac{\sinh 2i\psi}{\cosh (i\psi)}  A_i \\
+B_2&amp; =&amp;-\frac{\sinh (K_0d+i\psi)}{\sinh (K_0d +2i\psi) } \frac{\sinh 2i\psi}{\cosh (i\psi)}  A_i \\
+C&amp; =&amp;  \frac{\sinh 2i\psi}{\sinh (K_0d+2i\psi)}A_i
+\end{align*}\]</div>
+</div>
+<ul>
+<li>On considère à présent un paquet d'onde incident; et on suppose que <span class="arithmatex">\(\forall \omega \in [\omega_0-\frac{\Delta \omega}{2} , \omega_0+\frac{\Delta \omega}{2}]\)</span> on a <span class="arithmatex">\(K(\omega)d&gt;&gt;1\)</span>.</li>
+</ul>
+<p>On écrit le paquet d'onde dans la région 3 à l'aide du coefficient <span class="arithmatex">\(C\)</span> dépendant de <span class="arithmatex">\(\omega\)</span> :</p>
+<div class="arithmatex">\[\begin{align*}
+\theta_3(x,t)  = \mathbb{R}e \Big\{ \int_{\omega_0-\frac{\Delta \omega}{2} }^{\omega_0+\frac{\Delta \omega}{2}}  d\omega \mathcal{B}_i(\omega) \frac{\sinh 2i\psi(\omega)}{\sinh[ K(\omega)d+2i\psi(\omega)] } e^{i [ q(\omega)(x-d) - \omega t ]} \Big\}
+\end{align*}\]</div>
+<p>On peut alors prendre un équivalent du sinus hyperbolique pour les grandes valeurs :</p>
+<div class="arithmatex">\[\begin{align*}
+\sinh \sim \frac{e^x}{2}
+\end{align*}\]</div>
+<p>il reste :</p>
+<div class="arithmatex">\[\begin{align*}
+\theta_3(x,t)  = \mathbb{R}e \Big\{ \int_{\omega_0-\frac{\Delta \omega}{2} }^{\omega_0+\frac{\Delta \omega}{2}}  d\omega \mathcal{B}_i(\omega) \sinh(2i\psi(\omega)) i e^{-i2\psi(\omega)}  e^{i [ q(\omega)(x-d) - \omega t ]} \Big\}
+\end{align*}\]</div>
+<ul>
+<li>par la méthode de la phase stationnaire :</li>
+</ul>
+<div class="arithmatex">\[\begin{align*}
+\frac{d}{d\omega}(q(\omega)(x-d) +)- \omega t + \frac{\pi}{2}- 2\psi(\omega)) = 0
+\end{align*}\]</div>
+<p>soit</p>
+<div class="arithmatex">\[\begin{align*}
+x(t)= d +v(t + 2 \big( \frac{d\psi}{d\omega} \big)_{\omega_0} )
+\end{align*}\]</div>
+<p>Il émerge, en <span class="arithmatex">\(x=d\)</span>, à <span class="arithmatex">\(t= -2\big( \frac{d\psi}{d\omega} \big)_{\omega_0} &gt;0\)</span>.</p>
+<ul>
+<li>
+<p>Dans l'approximation faite ce temps est indépendant de <span class="arithmatex">\(d\)</span>! C'est assez spectaculaire, quelque soit l'épaisseur à traverser (restant petite) le paquet d'onde met le même temps.</p>
+</li>
+<li>
+<p>C'est l'<a href="https://fr.wikipedia.org/wiki/Effet_tunnel">effet tunnel</a> de la mécanique quantique!!</p>
+</li>
+</ul>
+<p>Lorsqu'une particule, représentée par une <a href="https://fr.wikipedia.org/wiki/Fonction_d%27onde">fonction d'onde</a>, arrive sur barrière de potentiel plus haute que son énergie totale, la théorie quantique prévoit que la particule a une probabilité non nulle de se retrouver de l'autre côté de la barrière alors que cela est impossible en mécanique classique!</p>
+<p>applications :</p>
+<ul>
+<li>en optique :</li>
+</ul>
+<figure>
+<p><img alt="disque" src="coupleur.gif"/>
+</p>
+<figcaption>Comment introduire de la lumière dans un guide d'onde à l'aide d'un prisme.</figcaption>
+</figure>
+<p>la <a href="https://fr.wikipedia.org/wiki/R%C3%A9flexion_totale#Onde_%C3%A9vanescente,_r%C3%A9flexion_totale_frustr%C3%A9e">réflexion totale frustrée</a> est utilisée pour coupler / injecter de la lumière (donc de l'énergie) dans un <a href="https://fr.wikipedia.org/wiki/Guide_d%27onde">guide d'onde</a>.</p>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/Microscope_%C3%A0_effet_tunnel">microscope à effet tunnel</a> : c'est une technique appartenant à la famille des <a href="https://fr.wikipedia.org/wiki/Microscope_optique_en_champ_proche">microscopies à champ proche</a> : on explore une surface (d'un métal ou un semi-conducteur) à l'aide d'une pointe très fine en récupérant un courant électrique qui dépend de l'état de la surface.</li>
+</ul>
+<p>Le <a href="https://fr.wikipedia.org/wiki/Prix_Nobel_de_physique">prix Nobel de physique</a> a été attribué en 1986 à <a href="https://fr.wikipedia.org/wiki/Gerd_Binnig">G. Binnig</a> et <a href="https://fr.wikipedia.org/wiki/Heinrich_Rohrer">H. Röhrer</a> pour la mise au point du premier microscope à effet tunnel en 1982.</p>
+<p>La technique repose sur la forte dépendance du courant électrique (passant par effet tunnel quantique) entre la surface métallique à étudier et une pointe, en fonction de la distance qui les sépare.</p>
+<p>Par analogie on peut, dans modèle, calculer un facteur de transmission de la puissance mécanique entre les régions 1 et 3 :</p>
+<div class="arithmatex">\[\begin{align*}
+T = \frac{| C {|}^2}{| A {|}^2} = \frac{1}{1+\frac{\sinh^2 K_0d}{\sin^2 2\psi} }
+\end{align*}\]</div>
+<p>Dans le cas où <span class="arithmatex">\(K_0d &gt;&gt;1\)</span>, il reste : <span class="arithmatex">\(T \approx \sin^2 2\psi e^{-2K_0d}\)</span>; c'est cette dépendance en <span class="arithmatex">\(d\)</span> qui est intéressante pour la microscopie à effet tunnel.</p>
+<ul>
+<li>en physique du solide; électrons délocalisés; Le transport des charges par effet tunnel et le transport balistique sont à la base du fonctionnement de plusieurs dispositifs tels la <a href="https://fr.wikipedia.org/wiki/Diode_%C3%A0_effet_tunnel">diode tunnel</a> et le <a href="https://fr.wikipedia.org/wiki/Transistor_%C3%A0_effet_tunnel">transistor à effet tunnel</a>.</li>
+<li>en chimie quantique : <a href="https://fr.wikipedia.org/wiki/Inversion_de_l%27azote">transition de conformation de la molécule d'ammoniac</a>, rotation interne dans la molécule d'éthylène.</li>
+</ul>
+</div>
+</div>
+<footer>
+<div aria-label="footer navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral" href="../chaine_continue/" title="Approximation de la chaîne continue"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../chaine_continue/" style="color: #fcfcfc">« Previous</a></span>
+</span>
+</div>
+<script>var base_url = '..';</script>
+<script defer="" src="../js/theme_extra.js"></script>
+<script defer="" src="../js/theme.js"></script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+<script defer="" src="../extra.js"></script>
+<script defer="" src="../search/main.js"></script>
+<script defer="">
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+</body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="../img/favicon.ico" rel="shortcut icon"/>
+<title>Modes propres de torsion - Physique - ENS Lyon/Cachan - 1995</title>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" rel="stylesheet">
+<link href="../css/theme.css" rel="stylesheet"/>
+<link href="../css/theme_extra.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" rel="stylesheet"/>
+<script>
+    // Current page data
+    var mkdocs_page_name = "Modes propres de torsion";
+    var mkdocs_page_input_path = "modes_propres_torsion/index.md";
+    var mkdocs_page_url = null;
+  </script>
+<script defer="" src="../js/jquery-2.1.1.min.js"></script>
+<script defer="" src="../js/modernizr-2.8.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</link></head>
+<body class="wy-body-for-nav" role="document">
+<div class="wy-grid-for-nav">
+<nav class="wy-nav-side stickynav" data-toggle="wy-nav-shift">
+<div class="wy-side-scroll">
+<div class="wy-side-nav-search">
+<a class="icon icon-home" href=".."> Physique - ENS Lyon/Cachan - 1995</a>
+<div role="search">
+<form action="../search.html" class="wy-form" id="rtd-search-form" method="get">
+<input name="q" placeholder="Search docs" title="Type search term here" type="text"/>
+</form>
+</div>
+</div>
+<div aria-label="main navigation" class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation">
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal current" href="./">Modes propres de torsion</a>
+<ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="#chaine-discrete-infinie">Chaîne discrète infinie</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#moment-dinertie">Moment d'inertie</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#equation-du-mouvement">équation du mouvement</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#energie-mecanique-totale">énergie mécanique totale</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#recherche-de-solutions-ondulatoires">recherche de solutions ondulatoires</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#etude-de-la-relation-de-dispersion-symetrie-par-translation">étude de la relation de dispersion (symétrie par translation)</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#vitesse-de-phase-et-vitesse-de-groupe">vitesse de phase et vitesse de groupe</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#etude-du-centre-de-la-zone-de-brillouin-fracqa2-ll-1">étude du centre de la zone de Brillouin (\(| \frac{qa}{2} | \ll 1\))</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#etude-du-bord-de-la-zone-de-brillouin-q-g2">étude du bord de la zone de Brillouin (\(q = G/2\))</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#bande-de-frequences-permises">bande de fréquences permises</a>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#variables-normales-et-modes-propres-de-torsion">Variables normales et modes propres de torsion</a>
+<ul>
+<li class="toctree-l3"><a class="reference internal" href="#recherche-de-solutions-en-ondes-progressives">recherche de solutions en ondes progressives</a>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#variables-normales">variables normales</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chaine_continue/">Approximation de la chaîne continue</a>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../chaine_balourds/">Chaîne avec balourds</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<section class="wy-nav-content-wrap" data-toggle="wy-nav-shift">
+<nav aria-label="top navigation" class="wy-nav-top" role="navigation">
+<i class="fa fa-bars" data-toggle="wy-nav-top"></i>
+<a href="..">Physique - ENS Lyon/Cachan - 1995</a>
+</nav>
+<div class="wy-nav-content">
+<div class="rst-content">
+<div aria-label="breadcrumbs navigation" role="navigation">
+<ul class="wy-breadcrumbs">
+<li><a href="..">Docs</a> »</li>
+<li>Modes propres de torsion</li>
+<li class="wy-breadcrumbs-aside">
+</li>
+</ul>
+<hr/>
+</div>
+<div role="main">
+<div class="section">
+<h1 id="modes-propres-de-torsion"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.</span> Modes propres de torsion<a class="headerlink" href="#modes-propres-de-torsion" title="Permanent link">¶</a></h1>
+<h2 id="chaine-discrete-infinie"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1</span> Chaîne discrète infinie<a class="headerlink" href="#chaine-discrete-infinie" title="Permanent link">¶</a></h2>
+<figure>
+<p><img alt="disque" src="disque.gif"/>
+</p>
+<figcaption>dique en symétrie cylindrique</figcaption>
+</figure>
+<h3 id="moment-dinertie"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.1</span> Moment d'inertie<a class="headerlink" href="#moment-dinertie" title="Permanent link">¶</a></h3>
+<p>On calcule le <a href="https://fr.wikipedia.org/wiki/Moment_d%27inertie">moment d'inertie</a> d'un disque homogène de densité surfacique <span class="arithmatex">\(\sigma = \frac{M}{\pi R^{2}}\)</span>
+par rapport à son centre; on rappelle que l'élément de masse en coordonnées polaire est <span class="arithmatex">\(dm = \sigma rd\theta dr\)</span>, on obtient alors le moment d'inertie</p>
+<div class="arithmatex">\[J = \int\int_{D} OM^{2} d^{2}m = \int_{0}^{2\pi}d\theta \int_{0}^{R} r^3\sigma dr = \frac{MR^{2}}{2}\]</div>
+<h3 id="equation-du-mouvement"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.2</span> équation du mouvement<a class="headerlink" href="#equation-du-mouvement" title="Permanent link">¶</a></h3>
+<p>On se place dans le référentiel attaché au fil; le disque numéro <span class="arithmatex">\(n\)</span> est soumis aux forces extérieures suivantes :</p>
+<ul>
+<li>le poids : moment en <span class="arithmatex">\(G_n\)</span> nul</li>
+<li>la réaction du fil : moment en <span class="arithmatex">\(G_{n}\)</span> nul</li>
+<li>les torsions exercées par les troncons de fil de part et d'autre de <span class="arithmatex">\(G_n\)</span></li>
+</ul>
+<p>On applique le <a href="https://fr.wikipedia.org/wiki/Th%C3%A9or%C3%A8me_du_moment_cin%C3%A9tique">théorème du moment cinétique</a> en <span class="arithmatex">\(G_n\)</span></p>
+<div class="arithmatex">\[\Big( \frac{d}{dt}\overrightarrow{\sigma_{G_n}} \Big)_{\mathcal{R}} = \sum \overrightarrow{\mathcal{M}_{G_n}}
+\]</div>
+<p>On projette la relation sur l'axe du fil, il ne reste que le <a href="https://fr.wikipedia.org/wiki/Couple_(physique)">couple</a> des forces de torsion :</p>
+<div class="arithmatex">\[J\ddot{\theta_n} = - C(\theta_n - \theta_{n-1}) - C(\theta_n - \theta_{n+1})\]</div>
+<div class="admonition eq">
+<p class="admonition-title">équation du mouvement</p>
+<div class="arithmatex">\[J\ddot{\theta_n} + C(2\theta_n - \theta_{n-1}  - \theta_{n+1}) = 0\]</div>
+</div>
+<p>Le mouvement du disque <span class="arithmatex">\(D_n\)</span> dépend de ceux de <span class="arithmatex">\(D_{n-1}\)</span> et <span class="arithmatex">\(D_{n+1}\)</span>. </p>
+<h3 id="energie-mecanique-totale"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.3</span> énergie mécanique totale<a class="headerlink" href="#energie-mecanique-totale" title="Permanent link">¶</a></h3>
+<p>On choisit de l'origine des énergies potentielles quand la chaîne est totalement relâchée (<span class="arithmatex">\(\forall n \in \mathbb{N}, \theta_n=0\)</span>).</p>
+<p>Calculons l'énergie que doit dépenser réversiblement un opérateur pour tordre chaque disque, respectivement, d'un angle <span class="arithmatex">\(\theta_n\)</span>.
+Supposons que tous les disques situés avant <span class="arithmatex">\(D_n\)</span> ont été tordus et que <span class="arithmatex">\(D_n\)</span> et les suivants sont encore relâchés; pour tordre <span class="arithmatex">\(D_n\)</span> d'un angle <span class="arithmatex">\(\theta_n\)</span>, un opérateur doit exercer réversiblement une force dont le travail est  l'énergie potentielle :</p>
+<div class="arithmatex">\[W_{op} = E_p(n) = -W_{(\textrm{forces de torsion})} = - \int \Gamma d\theta\]</div>
+<div class="arithmatex">\[W_{op} = - \int_{0}^{\theta_n} \Big[ -C(\theta-\theta_{n-1}) -  C(\theta-0) \Big] d\theta = C\theta_n^{2} - C\theta_n\theta_{n-1}\]</div>
+<p>L'énergie cinétique du disque <span class="arithmatex">\(D_n\)</span> est <span class="arithmatex">\(E_c(n) = \frac{J}{2} \Big(\frac{d\theta_n}{dt}\Big)^2\)</span>.</p>
+<p>Finalement l'énergie mécanique totale de la chaîne s'écrit :</p>
+<div class="admonition eq">
+<p class="admonition-title">énergie mécanique totale</p>
+<div class="arithmatex">\[E = \sum_{n \in \mathbb{Z}} \left[ E_c(n) + E_p(n) \right] =  \sum_{n \in \mathbb{Z}} \Big[ \frac{J}{2} \dot{\theta_n}^2 + C\theta_n^2 + C\theta_n\theta_{n-1} \Big]\]</div>
+</div>
+<p>Cette somme, nécessairement convergente, est égale à l'énergie injectée dans le système (par exemple en bout de chaîne à l'aide d'un moteur électrique).</p>
+<h3 id="recherche-de-solutions-ondulatoires"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.4</span> recherche de solutions ondulatoires<a class="headerlink" href="#recherche-de-solutions-ondulatoires" title="Permanent link">¶</a></h3>
+<p>Sachant que <span class="arithmatex">\(\dot \theta_n = (-i\omega) \theta_n\)</span> et que <span class="arithmatex">\(\ddot \theta_n = (-i\omega)^2 \theta_n\)</span>, on renvoie la solution proposée par l'énoncé dans l'équation du mouvement. Après simplifications, on obtient la condition suffisante d'existence des solutions :</p>
+<div class="admonition eq">
+<p class="admonition-title">relation de dispersion</p>
+<div class="arithmatex">\[\omega = 2\sqrt{\frac{C}{J}} |\sin \frac{qa}{2}|\]</div>
+</div>
+<p>Le système formé des équations du mouvement de chaque disque exprime l'action de proche en proche que peut exercer chaque maillon sur ces voisins. Si l'on tord un maillon, il entraîne son voisin, puis celui-ci entraîne le suivant, etc...</p>
+<p>Une impulsion est succeptible de se propager le long de la chaîne.</p>
+<p>Supposons que l'on impose à l'un des maillons un mouvement vibratoire sinusoidal (à l'aide d'un petit moteur électrique). Après amortissement des effets transitoires liés à la mise en marche de l'excitateur, le mouvement de chaque maillon doit également être sinusoidal de <em>même fréquence, même amplitude</em> car rien ne distingue les chaînons les uns des autres : l'énergie ne subit aucune absorption à mesure que l'on s'éloigne de la source excitatrice.</p>
+<p>Il était donc raisonnable de proposer des solutions qui sont le produit d'un terme purement oscilatoire : <span class="arithmatex">\(e^{-i\omega t}\)</span> avec un terme de déphasage : <span class="arithmatex">\(e^{qx_n}\)</span> qui dépend de la position <span class="arithmatex">\(x_n\)</span>.</p>
+<h3 id="etude-de-la-relation-de-dispersion-symetrie-par-translation"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.5</span> étude de la relation de dispersion (symétrie par translation)<a class="headerlink" href="#etude-de-la-relation-de-dispersion-symetrie-par-translation" title="Permanent link">¶</a></h3>
+<ul>
+<li>la fonction <span class="arithmatex">\(\omega = f(q)\)</span> est périodique de période : <span class="arithmatex">\(G=\frac{2\pi}{a}\)</span></li>
+</ul>
+<figure>
+<p><img alt="disque" src="disper.gif"/>
+</p>
+<figcaption>Relation de dispersion</figcaption>
+</figure>
+<ul>
+<li>Si l'on change <span class="arithmatex">\(q\)</span> par <span class="arithmatex">\(q+pG\)</span> la pulsation reste la même <span class="arithmatex">\(\omega(q+pG) = \omega(q) = \omega\)</span> et on vérifie ensuite que la solution est invariante:</li>
+</ul>
+<div class="arithmatex">\[\forall n \in \mathbb{Z}, e^{i\big[(q+pG)x_n-\omega t\big]} = e^{i(qx_n-\omega t)} = \theta_{n}(t)\]</div>
+<ul>
+<li>Cette invariance est dûe au fait que la chaîne est discrète (il y a une longueur caractéristique minimale qui est le pas <span class="arithmatex">\(a\)</span>).</li>
+</ul>
+<p>Parlons en terme de longueur d'onde (grandeur physique plus intuitive). La plus petite longueur d'onde observable "physiquement" est <span class="arithmatex">\(a\)</span>. Considérons une solution telle que <span class="arithmatex">\(q = q_0 + pG\)</span> (p entier)  soit <span class="arithmatex">\(|q| &gt; \frac{G}{2}\)</span> c'est à dire qui aurait une longueur d'onde inférieure à <span class="arithmatex">\(a\)</span> (donc non observable physiquement).</p>
+<p>La longueur d'onde mesurée (physique ou effective) est inférieure à <span class="arithmatex">\(a\)</span>.
+Pour une étude physique, on peut donc se restreindre à la zone de Brillouin : <span class="arithmatex">\(\rbrack \frac{G}{2}, \frac{G}{2} \rbrack\)</span>.</p>
+<h3 id="vitesse-de-phase-et-vitesse-de-groupe"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.6</span> vitesse de phase et vitesse de groupe<a class="headerlink" href="#vitesse-de-phase-et-vitesse-de-groupe" title="Permanent link">¶</a></h3>
+<ul>
+<li>vitesse de phase : c'est la vitesse de déplacement des surfaces équiphases (pour le calcul
+on plonge la variable d'espace dans un espace continu : <span class="arithmatex">\(x \in \mathbb(R)\)</span>)</li>
+</ul>
+<div class="arithmatex">\[d(qx-wt)_{q=cste}=0 \Rightarrow v_{\phi} = \frac{dx}{dt} = \frac{\omega(q)}{q}\]</div>
+<div class="admonition eq">
+<p class="admonition-title">vitesse de phase</p>
+<div class="arithmatex">\[v_{\phi}(q) = 2\sqrt{\frac{C}{J}} \frac{| \sin \frac{qa}{2} |}{q}\]</div>
+</div>
+<ul>
+<li>vitesse de groupe : c'est la vitesse de propagation de l'énergie, <span class="arithmatex">\(v_g = | \frac{d\omega}{dq} |\)</span></li>
+</ul>
+<div class="admonition eq">
+<p class="admonition-title">vitesse de groupe</p>
+<div class="arithmatex">\[v_g = a\sqrt{\frac{C}{J}}|\cos\frac{qa}{2}|\]</div>
+</div>
+<p>Ces deux vitesses étant différentes, on dit que le milieu de propagation est dispersif.</p>
+<h3 id="etude-du-centre-de-la-zone-de-brillouin-fracqa2-ll-1"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.7</span> étude du centre de la zone de Brillouin (<span class="arithmatex">\(| \frac{qa}{2} | \ll 1\)</span>)<a class="headerlink" href="#etude-du-centre-de-la-zone-de-brillouin-fracqa2-ll-1" title="Permanent link">¶</a></h3>
+<ul>
+<li><span class="arithmatex">\(v_{\phi} \simeq  a \sqrt{\frac{C}{J}}\)</span> et <span class="arithmatex">\(v_g \simeq a \sqrt{\frac{C}{J}}\)</span></li>
+<li><span class="arithmatex">\(\frac{\theta_{n+1}(t)}{\theta_n(t)} = e^{iqa} \simeq 1\)</span> : deux disques consécutifs sont pratiquement en phase.</li>
+<li>tous les disques vibrent en phase, c'est un mouvement en bloc. En effet, comme <span class="arithmatex">\(q\)</span> est défini modulo <span class="arithmatex">\(G\)</span>, la condition : <span class="arithmatex">\(\frac{q}{a} \ll 1\)</span> revient à considérer <span class="arithmatex">\(q \approx \frac{2\pi}{a}\)</span> soit une longueur d'onde de <span class="arithmatex">\(a\)</span> (mouvement en bloc).</li>
+</ul>
+<h3 id="etude-du-bord-de-la-zone-de-brillouin-q-g2"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.8</span> étude du bord de la zone de Brillouin (<span class="arithmatex">\(q = G/2\)</span>)<a class="headerlink" href="#etude-du-bord-de-la-zone-de-brillouin-q-g2" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p><span class="arithmatex">\(\frac{\theta_{n+1}(t)}{\theta_n()t} = e^{iqa} = e^{i\pi} = -1\)</span> : deux disques consécutifs sont en opposition de phase.</p>
+</li>
+<li>
+<p>l'état physique est inchangé car <span class="arithmatex">\(\frac{G}{2}\)</span> et <span class="arithmatex">\(-\frac{G}{2}\)</span> diffèrent d'une période.</p>
+</li>
+<li>
+<p>la vitesse de groupe vaut <span class="arithmatex">\(v_g = a\sqrt{\frac{C}{J}} | \cos \frac{\pi}{a}.\frac{a}{2} | = 0\)</span> : l'énergie ne se déplace pas, elle oscille sur place, dans chaque cellule élémentaire.</p>
+</li>
+</ul>
+<h3 id="bande-de-frequences-permises"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.1.9</span> bande de fréquences permises<a class="headerlink" href="#bande-de-frequences-permises" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p><span class="arithmatex">\(\omega_c = 2\sqrt{\frac{C}{J}}\)</span>.</p>
+</li>
+<li>
+<p>l'énoncé suggère de considérer le cas où <span class="arithmatex">\(\theta_{n+1}=-\theta_n\)</span> et de réécrire l'équation de propagation, on obtient :</p>
+</li>
+</ul>
+<div class="arithmatex">\[\frac{d^2\theta_n}{dt^2} + \omega^2\theta_n = 0\]</div>
+<p>avec <span class="arithmatex">\(\omega^2=4\frac{C}{J}\)</span></p>
+<p>Comment comprendre l'existence d'une fréquence de coupure ?
+On peut raisonner sur l'énergie du système pour étudier le bord de la zone de Brillouin.</p>
+<p>Considérons l'énergie mécanique d'un maillon :</p>
+<div class="arithmatex">\[E_n = E_c(n) + E_p(n) =  \frac{J}{2} \dot{\theta_n}^2 + C\theta_n^2 + C\theta_n\theta_{n-1}\]</div>
+<p>que l'on peut réécrire en symétrisant le terme d'énergie potentielle :</p>
+<div class="arithmatex">\[E_n = E_c(n) + E_p(n) =  \frac{J}{2} \dot{\theta_n}^2 + \frac{C}{2} \big( \theta_n - \theta_{n-1} \big)^2\]</div>
+<p>En prenant <span class="arithmatex">\(\theta_n = A \cos \omega t\)</span> et <span class="arithmatex">\(\theta_{n+1} = A \cos (\omega t + \phi)\)</span> avec <span class="arithmatex">\(\phi = qa\)</span>, on calcule <span class="arithmatex">\(E_c(n)\)</span> et <span class="arithmatex">\(E_p(n)\)</span> :</p>
+<div class="arithmatex">\[E_c(n)  =  \frac{JA^2}{2} \omega^2 \sin^2 \omega t\]</div>
+<div class="arithmatex">\[E_p(n)  =  2CA^2 \sin^2 \frac{\phi}{2} \sin^2 (\omega t + \frac{\phi}{2})\]</div>
+<p>Le mouvement de torsion se transmet de proche en proche (à partir d'une source) grâce à la conversion de l'énergie cinétique en énergie potentielle de torsion.</p>
+<p>On remarque que <span class="arithmatex">\(E_c(n)\)</span> a une amplitude qui augmente avec <span class="arithmatex">\(\omega\)</span>, tandis que celle de <span class="arithmatex">\(E_p(n)\)</span> vaut au maximum <span class="arithmatex">\(2C\)</span>.</p>
+<p>Lorsque <span class="arithmatex">\(\omega\)</span> est faible, une <strong>onde plane progressive</strong> peut se propager : la longeur d'onde s'adapte pour que l'amplitude de <span class="arithmatex">\(E_p(n)\)</span> soit la même que celle de <span class="arithmatex">\(E_c(n)\)</span>. On retrouve ainsi la relation de dispersion. Toute l'énergie injectée est transmise.</p>
+<ul>
+<li>
+<p>Si on injecte de l'énergie cinétique avec une pulsation égale à <span class="arithmatex">\(\omega_c = 2 \sqrt{\frac{C}{J}}\)</span>, alors <span class="arithmatex">\(E_c(n)\)</span> et <span class="arithmatex">\(E_p(n)\)</span> oscillent en phase, l'énergie oscille sur place, l'onde est <strong>stationnaire</strong>.</p>
+</li>
+<li>
+<p>Si on injecte de l'énergie cinétique avec une pulsation supérieure à <span class="arithmatex">\(\omega_c\)</span>, alors l'énergie potentielle ayant une amplitude bloquée à <span class="arithmatex">\(2C\)</span>, elle ne peut absorber toute l'énergie cinétique et la restituer au maillon suivant : l'amplitude du mouvement diminue d'un maillon au suivant, l'onde est dite <strong>amortie</strong>.</p>
+</li>
+</ul>
+<p>On voit ainsi apparaître la coupure fondamentale à <span class="arithmatex">\(\omega_c\)</span>, qui est dûe au fait que le fil de longueur <span class="arithmatex">\(a\)</span> ne peut pas transmettre des énergies aussi grandes que l'on veut. Cela disparaîtra quand on étudiera le modèle de torsion continue.</p>
+<h2 id="variables-normales-et-modes-propres-de-torsion"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.2</span> Variables normales et modes propres de torsion<a class="headerlink" href="#variables-normales-et-modes-propres-de-torsion" title="Permanent link">¶</a></h2>
+<p>On étudie à présent une chaîne finie (N chaînons) bouclée sur elle-même. C'est la façon la plus simple de traiter les effets de bord périodiques. Les solutions des équations du mouvements devront donc satisfaire la relation suivante :</p>
+<div class="arithmatex">\[\forall n \in \mathbb{Z} ,  \theta_{n+N}(t) = \theta_n(t)\]</div>
+<h3 id="recherche-de-solutions-en-ondes-progressives"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.2.1</span> recherche de solutions en ondes progressives<a class="headerlink" href="#recherche-de-solutions-en-ondes-progressives" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>L'équation du mouvement est encore valable et donc la relation de dispersion également. (Mathématiquement on ne fait que modifier les conditions aux limites sans toucher au système des équations du mouvement). La condition de BVK impose que : <span class="arithmatex">\(e^{iqNa} = 1\)</span> soit $q_m = \frac{2\pi}{Na}m $ où <span class="arithmatex">\(m \in \mathbb{Z}\)</span>.</p>
+</li>
+<li>
+<p><span class="arithmatex">\(q\)</span> devient une variable discrète avec <span class="arithmatex">\(q_m = m q_1\)</span> et <span class="arithmatex">\(q_1 = \frac{2\pi}{L}\)</span>.
+Il s'agit de solutions ondulatoires dont la longueur d'onde <span class="arithmatex">\(\lambda\)</span> est <span class="arithmatex">\(\frac{L}{m}\)</span> : un sous-multiple de la longueur d'un chaînon.</p>
+</li>
+<li>
+<p>On cherche <span class="arithmatex">\(m\)</span> tel que : <span class="arithmatex">\(-\frac{G}{2} &lt; q_m \leq \frac{G}{2} \Leftrightarrow -\frac{N}{2} &lt; m \leq \frac{N}{2}\)</span></p>
+<ul>
+<li>si N pair : <span class="arithmatex">\(N = 2 N_1 \Rightarrow -N_1 &lt; m \leq N_1\)</span><br/>
+<span class="arithmatex">\(m = -N_1+1, -N_1+2,...,0,1,...,N_1 \qquad\)</span> soit <span class="arithmatex">\(\qquad 2N_1=N\)</span> valeurs.</li>
+<li>si N impair  <span class="arithmatex">\(N = 2 N_1-1 \Rightarrow -N_1+\frac{1}{2} &lt; m \leq N_1-\frac{1}{2}\)</span><br/>
+<span class="arithmatex">\(m = -N_1+1, -N_1+2,...,0,1,...,N_1-1 \qquad\)</span> soit <span class="arithmatex">\(\qquad 2N_1-1=N\)</span> valeurs.</li>
+</ul>
+</li>
+</ul>
+<p>CQFD.</p>
+<p>Dans tous les cas il y a <span class="arithmatex">\(N\)</span> valeurs possibles de <span class="arithmatex">\(q\)</span> dans <span class="arithmatex">\(\Big]-\frac{G}{2},\frac{G}{2}\Big]\)</span></p>
+<h3 id="variables-normales"><span class="enumerate-headings-plugin enumerate-heading-plugin">1.2.2</span> variables normales<a class="headerlink" href="#variables-normales" title="Permanent link">¶</a></h3>
+<ul>
+<li>
+<p>L'énoncé nous dit 
+  !!! quote</p>
+<div class="codehilite"><pre><span></span><code>... L'existence des solutions en ondes progressives (...) suggère d'introduire (un)
+nouveau jeu de variable, dites normales....
+</code></pre></div>
+<p>En effet, on peut faire une petite analogie avec l'algèbre linéaire : dans un espace vectoriel normé fini muni d'une base orthonormée, une façon simple de caractériser tout vecteur de l'espace est de connaitre l'ensemble des projections orthogonales de ce vecteur quelconque sur les vecteurs de la base orthonormée. C'est l'idée que l'on applique ici : en fait en physique on appelle cela une Transformée de Fourier Discrète (TFD).</p>
+<p>Le nouveau jeu de variable <span class="arithmatex">\(\lbrace \xi_m \rbrace\)</span> peut être qualifié de dual du jeu <span class="arithmatex">\(\Big\{ \theta_n \Big\}\)</span>.</p>
+<p>Nous n'avons pas besoin de connaitre la TFD pour répondre à la question, nous devons seulement effectuer le changement de variable proposé. En renvoyant l'expression de <span class="arithmatex">\(\theta_n(t)\)</span> de l'énoncé dans l'équation du mouvement, on obtient :</p>
+<div class="arithmatex">\[J\frac{d^2}{dt^2}\Big[\frac{1}{\sqrt{N}}\sum_{m}e^{iq_mx_n} \xi_m(t) \Big] + 2C \Big[\frac{1}{\sqrt{N}}\sum_{m}e^{iq_mx_n} \xi_m(t) \Big] = \\ C \Big[ \frac{1}{\sqrt{N}}\sum_{m}e^{iq_mx_{n+1}} \xi_m(t) +  \frac{1}{\sqrt{N}}\sum_{m}e^{iq_mx_{n-1}} \xi_m(t)\Big]\]</div>
+<p>soit</p>
+<div class="arithmatex">\[\frac{1}{\sqrt{N}} \Big[ \big(e^{iq_mx_n}\big)\big(J\frac{d^2\xi_m}{dt^2}+2C\xi_m-C\xi_m e^{iq_ma}-C\xi_m e^{-iq_ma}\big)\Big] = 0\]</div>
+<p>La dernière expression est une combinaison linéraire de fonctions <span class="arithmatex">\(\lbrace e^{iq_mx} {\rbrace}\)</span> de la variable <span class="arithmatex">\(x\)</span>; or cette famille de fonctions, indexée par <span class="arithmatex">\(m\)</span>, est libre, on peut donc égaler à zéro les coefficients :</p>
+<ul>
+<li><span class="arithmatex">\(\forall n \in \mathbb{Z}\)</span> <span class="arithmatex">\(J\frac{d^2\xi_m}{dt^2} + 4C\sin^2 (\frac{q_ma}{2})\xi_m(t) =  0\)</span></li>
+</ul>
+</li>
+</ul>
+<div class="admonition eq">
+<p class="admonition-title">équation du mouvement de <span class="arithmatex">\(\xi_m\)</span></p>
+<div class="arithmatex">\[\frac{d^2\xi_m}{dt^2} + \omega_m^2\xi_m(t)  =  0\]</div>
+<p>En utilisant l'expression définie en I-1-4, on obtient la pulsation <span class="arithmatex">\(\omega_m = 2\sqrt{\frac{C}{J}}| \sin \frac{q_ma}{2}|\)</span></p>
+</div>
+<ul>
+<li>
+<p>L'équation précédente est celle d'un <strong>oscillateur harmonique</strong> de pulsation <span class="arithmatex">\(\omega_m\)</span> que l'on trouve également en électricité,... et plus généralement dans tout système physique évoluant au voisinage d'une position déquilibre et soumis à une force de rappel.</p>
+</li>
+<li>
+<p>Les variables <span class="arithmatex">\(\xi_m\)</span> ne sont pas couplées (elles obéissent chacune à leur propre équation).</p>
+</li>
+</ul>
+<div class="admonition remark">
+<p class="admonition-title">Remarque</p>
+<p>Les calculs menés dans cette question s'inspire d'une méthode très générale de résolution des équations différentielles linéaires : on prend une transformée de Fourier de l'équation différentielle, on obtient une équation algébrique (pour les fonctions duales) qui est souvent plus facile à résoudre puis on prend la transformée de Fourier inverse pour revenir aux fonctions de départ.</p>
+</div>
+</div>
+</div>
+<footer>
+<div aria-label="footer navigation" class="rst-footer-buttons" role="navigation">
+<a class="btn btn-neutral float-right" href="../chaine_continue/" title="Approximation de la chaîne continue">Next <span class="icon icon-circle-arrow-right"></span></a>
+</div>
+<hr/>
+<div role="contentinfo">
+<!-- Copyright etc -->
+</div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+</div>
+</div>
+</section>
+</div>
+<div aria-label="versions" class="rst-versions" role="note">
+<span class="rst-current-version" data-toggle="rst-current-version">
+<span><a href="../chaine_continue/" style="color: #fcfcfc">Next »</a></span>
+</span>
+</div>
+<script>var base_url = '..';</script>
+<script defer="" src="../js/theme_extra.js"></script>
+<script defer="" src="../js/theme.js"></script>
+<script defer="" src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+<script defer="" src="../extra.js"></script>
+<script defer="" src="../search/main.js"></script>
+<script defer="">
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+</body>
+</html>
