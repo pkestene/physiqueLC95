@@ -422,7 +422,7 @@ où l'angle $\phi'$ est défini par :
 
 On remarque que $\phi'=\frac{\pi}{2} - \phi$.
 
-On pose $2\psi = \phi - \phi' - \frac{\pi}{2} = 2\phi - \pi$ ($\psi$ joue le r\^ole du $\phi$ de l'énoncé puisque $\phi$ conserve la signification qu'il a dans les questions précédentes). On a alors :
+On pose $2\psi = \phi - \phi' - \frac{\pi}{2} = 2\phi - \pi$ ($\psi$ joue le rôle du $\phi$ de l'énoncé puisque $\phi$ conserve la signification qu'il a dans les questions précédentes). On a alors :
 
 \begin{align*}
 C = \frac{\sinh 2i\psi}{\sinh (K_0d+2i\psi)}A_i
@@ -487,10 +487,10 @@ applications :
 
 <figure markdown>
   ![disque](coupleur.gif)
-  <figcaption>Comment introduire de la lumière dans un [guide d'onde](https://fr.wikipedia.org/wiki/Guide_d%27onde) à l'aide d'un prisme.</figcaption>
+  <figcaption>Comment introduire de la lumière dans un guide d'onde à l'aide d'un prisme.</figcaption>
 </figure>
 
- la [réflexion totale frustrée](https://fr.wikipedia.org/wiki/R%C3%A9flexion_totale#Onde_%C3%A9vanescente,_r%C3%A9flexion_totale_frustr%C3%A9e )est utilisée pour coupler / injecter de la lumière (donc de l'énergie) dans un guide d'onde.
+ la [réflexion totale frustrée](https://fr.wikipedia.org/wiki/R%C3%A9flexion_totale#Onde_%C3%A9vanescente,_r%C3%A9flexion_totale_frustr%C3%A9e) est utilisée pour coupler / injecter de la lumière (donc de l'énergie) dans un [guide d'onde](https://fr.wikipedia.org/wiki/Guide_d%27onde).
 
 
 - [microscope à effet tunnel](https://fr.wikipedia.org/wiki/Microscope_%C3%A0_effet_tunnel) : c'est une technique appartenant à la famille des [microscopies à champ proche](https://fr.wikipedia.org/wiki/Microscope_optique_en_champ_proche) : on explore une surface (d'un métal ou un semi-conducteur) à l'aide d'une pointe très fine en récupérant un courant électrique qui dépend de l'état de la surface.
