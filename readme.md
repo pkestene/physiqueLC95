@@ -21,3 +21,7 @@ Finally modify mkdocs.yml, especially arithmatex to generate generic output need
 ```shell
 mkdocs serve
 ```
+
+## github pages
+
+See https://squidfunk.github.io/mkdocs-material/publishing-your-site/
