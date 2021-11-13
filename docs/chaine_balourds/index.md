@@ -427,8 +427,8 @@ On pose $2\psi = \phi - \phi' - \frac{\pi}{2} = 2\phi - \pi$ ($\psi$ joue le r\^
 \begin{align*}
 C = \frac{\sinh 2i\psi}{\sinh (K_0d+2i\psi)}A_i
 \end{align*}
-C'est la formule de l'énoncé.
 
+C'est la formule de l'énoncé.
 
 
 !!! eq "la solution complète"
